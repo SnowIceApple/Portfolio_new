@@ -188,7 +188,6 @@ section{
     /* background: rgba(95, 99, 104, 0.07); */
     background: #f2f4f9;
     transition: all .1s ease;
-    -webkit-transition: all .1s ease;
 }
 
 #mobile_nav ul li.active a{

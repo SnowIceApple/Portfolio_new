@@ -24,7 +24,7 @@ $(document).ready(function(){
 
       });
 
-      const swiper2= new Swiper('.main_support_slide', {
+      const swiper2 = new Swiper('.main_support_slide', {
         // Optional parameters
         direction: 'horizontal',
         watchOverflow: true,
