@@ -25,9 +25,47 @@ $(document).ready(function(){
         speed: 1300,
         loop: true,
         // calculateHeight: true,
+        touchRatio: 0,
 
       });
 
       swiper1.controller.control = swiper2;
       swiper2.controller.control = swiper1;
+
+      $('.il_floor1 > li > a').on('click', function(e){
+        e.preventDefault();
+        $(this).parent().addClass('active');
+        $('body').addClass('fixed nav_active modal_active');
+      });
+
+      $(document).on('mouseup', function(e){
+        if($('.career_inner').has(e.target).length === 0 && $('body').hasClass('modal_active') == true){
+            $('.il_floor1 > li').removeClass('active');
+            $('body').removeClass('fixed nav_active modal_active');
+        }
+      });   
+
+      $(window).on('scroll', function(){
+        if($(window).scrollTop() > 80){
+            $('.go_top').addClass('active');
+        }
+        else{
+            $('.go_top').removeClass('active');
+        }
+      });
+
+      $(".career_list ul").mCustomScrollbar(
+        {
+            theme:"dark",
+            scrollInertia: 300,
+            setHeight: '100%',
+        }
+      );
+
+      $('.go_top button').on('click', function(){
+        $('#nav ul li:first-child > a').focus();
+        $('html, body').animate({
+            scrollTop: 0,
+        }, 500);
+      });
 });
