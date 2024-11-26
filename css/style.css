@@ -935,3 +935,8 @@ section{
     opacity: 1;
 }
 
+@media screen and (min-device-width: 400px) and (max-device-width: 767px) and (orientation: landscape){
+    .career_list ul{
+        height: calc(100vh - 62px);
+    }
+}
