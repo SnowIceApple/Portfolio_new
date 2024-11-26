@@ -34,6 +34,7 @@ section{
     top: 0;
     z-index: 100;
     width: 100%;
+    box-shadow: 0px 0px 20px rgba(95, 99, 104, 0.2);
 }
 
 .header{
@@ -47,6 +48,20 @@ section{
     height: 80px;
 }
 
+.logo{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logo a{
+    font-size: 28px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
 /* nav */
 
 #nav{
@@ -54,6 +69,7 @@ section{
     right: 0;
     top: 50%;
     transform: translateY(-50%);
+    -webktit-transform: translateY(-50%);
 }
 
 #nav ul{
@@ -88,6 +104,89 @@ section{
 #nav ul li a:hover::after,
 #nav ul li a:focus::after{
     opacity: 1;
+}
+
+/* mobile_nav */
+
+
+.mobile_nav_box{
+    display: none;
+    position: fixed;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    width: calc(100% - 40px);
+    z-index: 50;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mobile_nav_btn{
+}
+
+.mobile_nav_btn button{
+    width: 55px;
+    height: 55px;
+    background: #fff url('../img/menu_ico.png') center no-repeat;
+    background-size: auto 70% !important;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+}
+
+.mobile_nav_box.active .mobile_nav_btn button{
+    background: #fff url('../img/close_gray.png') center no-repeat;
+}
+
+#mobile_nav{
+    position: fixed;
+    left: 0;
+    bottom: 70px;
+    transform: translateY(50%);
+    -webkit-transform: translateY(50%);
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    background: #fff;
+    box-shadow: 0px 0px 20px rgba(18, 32, 144, 0.2);
+    z-index: -1;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+    will-change: transform, opacity;
+}
+
+.mobile_nav_box.active #mobile_nav{
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
+}
+
+#mobile_nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#mobile_nav ul li{
+    flex: 1 1 auto;
+}
+
+#mobile_nav ul li a{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 999px;
+    box-sizing: border-box;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    /* background: rgba(95, 99, 104, 0.07); */
+    background: #f2f4f9;
 }
 
 /* content_box */
@@ -366,6 +465,7 @@ section{
     right: 0px;
     top: 50%;
     transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -385,11 +485,13 @@ section{
     left: 50%;
     bottom: -100%;
     transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
     width: 100%;
     max-width: 1300px;
     z-index: 250;
     transition: bottom 0.3s;
     transition-delay: 0.1s;
+    will-change: opacity, bottom;
 }
 
 .active .career_list_box{
@@ -449,12 +551,13 @@ section{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
     top: 0;
 }
 
 .career_list ul li{
     width: 100%;
-    padding: 10px 0;
+    padding: 9px 0;
     box-sizing: border-box;
 }
 
@@ -462,11 +565,12 @@ section{
     color: #333;
     font-size: 16px;
     letter-spacing: -0.5px;
+    line-height: 1.2;
 }
 
 .career_list_close{
     position: absolute;
-    right: 20px;
+    right: 10px;
     top: 9px;
 }
 
@@ -589,6 +693,7 @@ section{
 .wl_floor1 > li > a:focus .wl_img img,
 .wl_floor1 > li > a:hover .wl_img img{
     transform: scale(1.1);
+    -webkit-transform: scale(1.1);
 }
 
 .wl_desc{
@@ -746,6 +851,7 @@ section{
     font-weight: 900;
     display: inline-block;
     padding: 10px 0;
+    word-break: break-all;
 }
 
 .contact_link a:hover,
@@ -762,7 +868,7 @@ section{
 .go_top{
     position: fixed;
     right: calc((100% - 1300px) / 2);
-    bottom: 20px;
+    bottom: 10px;
     z-index: 50;
     visibility: hidden;
     opacity: 0;
@@ -796,12 +902,14 @@ section{
 .footer_txt{
     width: 100%;
     text-align: center;
-    padding: 12px 0;
+    padding: 12px 20px;
+    box-sizing: border-box;
 }
 
 .footer_txt h2{
-    font-size: 14px;
+    font-size: 13px;
     letter-spacing: -0.5px;
+    line-height: 1.2;
     color: #999;
 }
 
@@ -819,6 +927,7 @@ section{
     z-index: 200;
     cursor: pointer;
     transition: all .12s ease-in-out;
+    will-change: opacity;
 }
 
 .nav_active .fixed_bg{

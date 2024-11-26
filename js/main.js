@@ -62,10 +62,14 @@ $(document).ready(function(){
         }
       );
 
+      $('.mobile_nav_btn button').on('click', function(){
+        $('.mobile_nav_box').toggleClass('active');
+      });
+
       $('.go_top button').on('click', function(){
         $('#nav ul li:first-child > a').focus();
         $('html, body').animate({
             scrollTop: 0,
-        }, 500);
+        }, 300);
       });
 });
