@@ -101,13 +101,13 @@ section{
     transition: all .2s ease-in-out;
 }
 
+#nav ul li.active a::after,
 #nav ul li a:hover::after,
 #nav ul li a:focus::after{
     opacity: 1;
 }
 
 /* mobile_nav */
-
 
 .mobile_nav_box{
     display: none;
@@ -187,6 +187,13 @@ section{
     font-weight: 500;
     /* background: rgba(95, 99, 104, 0.07); */
     background: #f2f4f9;
+    transition: all .1s ease;
+    -webkit-transition: all .1s ease;
+}
+
+#mobile_nav ul li.active a{
+    color: #fff;
+    background: #000;
 }
 
 /* content_box */

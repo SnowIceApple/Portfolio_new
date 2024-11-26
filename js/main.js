@@ -71,4 +71,16 @@ $(document).ready(function(){
             scrollTop: 0,
         }, 300);
       });
+
+
+
+      $(window).on('scroll', function(){
+        $('section').each(function(){
+            if($(this).offset().top < $(window).scrollTop() + 1){
+                var idx = $(this).index();
+                $('#nav > ul > li').eq(idx).addClass('active').siblings().removeClass('active');
+                $('#mobile_nav > ul > li').eq(idx).addClass('active').siblings().removeClass('active');
+            }
+        });
+      });
 });
