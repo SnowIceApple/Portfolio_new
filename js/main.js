@@ -66,7 +66,7 @@ $(document).ready(function(){
       });
 
       $('.go_top button').on('click', function(){
-        $('#nav ul li:first-child > a').focus();
+        $('.header_inner').focus();
         $('html, body').animate({
             scrollTop: 0,
         }, 300);
