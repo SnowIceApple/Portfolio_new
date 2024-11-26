@@ -3,7 +3,7 @@ $(document).ready(function(){
         // Optional parameters
         direction: 'horizontal',
         watchOverflow: true,
-        speed: 1300,
+        speed: 900,
         loop: true,
 
         navigation: {
@@ -14,6 +14,12 @@ $(document).ready(function(){
         a11y: {
             prevSlideMessage: '이전 슬라이드',
             nextSlideMessage: '다음 슬라이드',
+        },
+
+        breakpoints: {
+            768: {
+                speed: 1300,
+            },
         },
 
       });
