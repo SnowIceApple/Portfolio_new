@@ -239,15 +239,20 @@ section{
     animation-delay: 0.2s;
     animation-timing-function: ease-in-out;
     background: #f2f4f9;
+    will-change: transform;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 @keyframes mainSlideDeco{
     0%{
         transform: translateY(0);
+        -webkit-transform: translateY(0);
     }
 
     100%{
         transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
     }
 }
 
