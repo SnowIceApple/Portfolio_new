@@ -212,8 +212,11 @@
         width: 100%;
     }
 
+    .ccl_img{
+    }
+
     .ccl_desc{
-        left: 0;
+        position: static;
         width: 100%;
     }
 }

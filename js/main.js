@@ -64,6 +64,7 @@ $(document).ready(function(){
         {
             theme:"dark",
             scrollInertia: 300,
+            setHeight: '100%',
         }
       );
 

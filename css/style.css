@@ -857,8 +857,7 @@ section{
 
 .ccl_floor1 > li > a:hover .ccl_desc,
 .ccl_floor1 > li > a:focus .ccl_desc{
-    left: 0;
-    width: 100%;
+    bottom: -10px;
 }
 
 .ccl_desc .cate_list{
