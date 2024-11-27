@@ -66,6 +66,10 @@
         padding-top: 400px;
     }
 
+    .main_slide_deco{
+        height: 400px;
+    }
+
     .main_slide_title{
         width: calc(100% - 50px);
         left: 50%;
@@ -176,6 +180,10 @@
         padding-top: 350px;
     }
 
+    .main_slide_deco{
+        height: 350px;
+    }
+
     .main_slide_title h2 strong{
         font-size: 24px;
     }
@@ -201,6 +209,11 @@
     }
 
     .ccl_floor1 > li{
+        width: 100%;
+    }
+
+    .ccl_desc{
+        left: 0;
         width: 100%;
     }
 }
