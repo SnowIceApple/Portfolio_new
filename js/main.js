@@ -70,6 +70,12 @@ $(document).ready(function(){
 
       $('.mobile_nav_btn button').on('click', function(){
         $('.mobile_nav_box').toggleClass('active');
+        if($(this).parent().parent().hasClass('active')){
+          $(this).children('.hidden_text').text('전체메뉴 닫기');
+        }
+        else{
+          $(this).children('.hidden_text').text('전체메뉴 열기');
+        }
       });
 
       $('.go_top button').on('click', function(){
@@ -78,6 +84,11 @@ $(document).ready(function(){
             scrollTop: 0,
         }, 300);
       });
+
+      $('.career_list_close button').on('click', function(){
+        $('body').removeClass('fixed nav_active modal_active');
+        $(this).closest('li').removeClass('active');
+      }); 
 
 
 
@@ -97,6 +108,12 @@ $(document).ready(function(){
         }
         else{
           $('body').removeClass('overZero');
+        }
+      });
+
+      $('#mobile_nav ul li:last-child a').on('blur', function(e){
+        if($('.mobile_nav_box').hasClass('active')){
+          $('.mobile_nav_btn button').focus();
         }
       });
 });
