@@ -158,7 +158,12 @@
         display: none;
     }
 
-    .header_inner{
+    .overZero .header_inner{
+        height: 65px;
+    }
+
+    .overZero #main{
+        padding-top: 65px;
     }
 
     .mobile_nav_box{

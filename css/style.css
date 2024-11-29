@@ -34,7 +34,7 @@ section{
     top: 0;
     z-index: 100;
     width: 100%;
-    box-shadow: 0px 0px 20px rgba(95, 99, 104, 0.2);
+    box-shadow: 0px 0px 20px rgba(95, 99, 104, 0.3);
 }
 
 .header{
@@ -46,6 +46,7 @@ section{
     position: relative;
     width: 100%;
     height: 80px;
+    transition: all .3s ease;
 }
 
 .logo{
@@ -75,13 +76,13 @@ section{
 #nav ul{
     display: flex;
     flex-wrap: wrap;
-    gap: 0 20px;
+    gap: 0 25px;
 }
 
 #nav ul li a{
     position: relative;
     display: inline-block;
-    padding: 6px 5px;
+    padding: 6px 0px;
     color: #000;
     font-weight: 400;
     letter-spacing: -0.5px;
@@ -206,6 +207,7 @@ section{
 #main{
     width: 100%;
     padding-top: 80px;
+    transition: all .3s ease;
 }
 
 .main{
@@ -326,7 +328,7 @@ section{
 .mssb_inner{
     position: relative;
     width: 100%;
-    padding: 30px 25px;
+    padding: 40px 25px 30px 25px;
     box-sizing: border-box;
 }
 
@@ -365,7 +367,7 @@ section{
 }
 
 .mss_skill_list{
-    margin-top: 30px;
+    margin-top: 26px;
 }
 
 .mss_skill_list ul{
@@ -473,7 +475,7 @@ section{
 
 .section_header span{
     display: block;
-    color: rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.5);
     font-size: 14px;
 }
 
@@ -544,7 +546,7 @@ section{
     width: 100%;
     max-width: 1300px;
     z-index: 250;
-    transition: bottom 0.3s;
+    transition: bottom 0.35s;
     transition-delay: 0.1s;
     will-change: opacity, bottom;
 }
@@ -689,7 +691,7 @@ section{
 
 .skill_icon_img img{
     width: 45px;
-    opacity: 0.6;
+    opacity: 0.7;
 }
 
 .skill_list ul li em{
@@ -699,6 +701,7 @@ section{
     font-size: 18px;
     font-weight: 500;
     letter-spacing: -1px;
+    color: #333;
 }
 
 /* works */
@@ -742,7 +745,7 @@ section{
     height: 100%;
     object-fit: cover;
     object-position: top;
-    transition: all .3s ease-in-out;
+    transition: all .3s ease;
 }
 
 .wl_floor1 > li > a:focus .wl_img img,
@@ -779,9 +782,9 @@ section{
 
 .wl_desc em{
     display: block;
-    color: #333;
+    color: #222;
     font-size: 19px;
-    letter-spacing: -1px;
+    letter-spacing: -0.5px;
     font-weight: 700;
     line-height: 1.2;
 }
@@ -822,11 +825,23 @@ section{
 }
 
 .ccl_img{
+    position: relative;
     user-select: none;
     overflow: hidden;
     width: 100%;
     height: 280px;
 }
+/* 
+.ccl_img::after{
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+} */
 
 /* 
 .ccl_img.rounded{
@@ -953,7 +968,7 @@ section{
 /* footer */
 
 #footer{
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 #footer, .footer{
@@ -968,7 +983,7 @@ section{
 }
 
 .footer_txt h2{
-    font-size: 13px;
+    font-size: 14px;
     letter-spacing: -0.5px;
     line-height: 1.2;
     color: #999;
@@ -987,8 +1002,9 @@ section{
     background: rgba(0, 0, 0, 0.65);
     z-index: 200;
     cursor: pointer;
-    transition: all .12s ease-in-out;
+    transition: all .3s ease-in-out;
     will-change: opacity;
+    overscroll-behavior: none;
 }
 
 .nav_active .fixed_bg{
