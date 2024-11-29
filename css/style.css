@@ -830,6 +830,7 @@ section{
     overflow: hidden;
     width: 100%;
     height: 280px;
+    z-index: -1;
 }
 /* 
 .ccl_img::after{
