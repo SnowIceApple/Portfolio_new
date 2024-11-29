@@ -90,6 +90,12 @@ $(document).ready(function(){
         $(this).closest('li').removeClass('active');
       }); 
 
+      $('.career_list_close button').on('blur', function(){
+        if($(this).closest('li').hasClass('active')){
+          $(this).focus();
+        }
+      });
+
 
 
       $(window).on('scroll', function(){
