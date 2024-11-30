@@ -90,6 +90,15 @@
         margin-bottom: 60px;
     }
 
+    .main_slide_control{
+        top: -25px;
+    }
+
+    .msc_btn{
+        width: 50px;
+        height: 50px;
+    }
+
     .main_support_slide_box{
         position: static;
         width: calc(100% - 40px);
@@ -159,11 +168,11 @@
     }
 
     .overZero .header_inner{
-        height: 65px;
+        height: 60px;
     }
 
     .overZero #main{
-        padding-top: 65px;
+        padding-top: 60px;
     }
 
     .mobile_nav_box{
@@ -217,7 +226,8 @@
         width: 100%;
     }
 
-    .ccl_img{
+    .ccl_img::after{
+        display: none;
     }
 
     .ccl_desc{

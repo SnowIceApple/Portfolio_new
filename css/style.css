@@ -69,6 +69,7 @@ section{
     position: absolute;
     right: 0;
     top: 50%;
+    height: 100%;
     transform: translateY(-50%);
     -webktit-transform: translateY(-50%);
 }
@@ -76,35 +77,54 @@ section{
 #nav ul{
     display: flex;
     flex-wrap: wrap;
-    gap: 0 25px;
+    height: 100%;
+}
+
+#nav ul li{
+    height: 100%;
 }
 
 #nav ul li a{
     position: relative;
-    display: inline-block;
-    padding: 6px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 6px 15px;
+    box-sizing: border-box;
+    transition: all .2s;
+}
+
+#nav ul li a span{
+    position: relative;
     color: #000;
     font-weight: 400;
     letter-spacing: -0.5px;
     font-size: 16px;
+    line-height: 1.2;
 }
 
-#nav ul li a::after{
+#nav ul li a span::after{
     display: block;
     content: "";
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -2px;
     width: 100%;
     height: 2px;
-    background: #000;
+    background: #555;
     opacity: 0;
-    transition: all .2s ease-in-out;
+    transition: all .2s ease;
 }
 
-#nav ul li.active a::after,
-#nav ul li a:hover::after,
-#nav ul li a:focus::after{
+#nav ul li a:hover,
+#nav ul li a:focus{
+    background-color: rgba(95, 99, 104, 0.05);
+}
+
+#nav ul li.active a span::after,
+#nav ul li a:hover span::after,
+#nav ul li a:focus span::after{
     opacity: 1;
 }
 
@@ -136,7 +156,7 @@ section{
 }
 
 .mobile_nav_box.active .mobile_nav_btn button{
-    background: #fff url('../img/close_gray.png') center no-repeat;
+    background: #000 url('../img/close_white.png') center no-repeat;
 }
 
 #mobile_nav{
@@ -193,7 +213,7 @@ section{
 
 #mobile_nav ul li.active a{
     color: #fff;
-    background: #000;
+    background: #343434;
 }
 
 /* content_box */
@@ -422,6 +442,10 @@ section{
     transition: all .1s ease-in-out;
 }
 
+.msc_btn:active{
+    transform: scale(0.95);
+}
+
 .msc_prev{
     background: #fff url('../img/arrow_back.png') center no-repeat; 
 }
@@ -508,7 +532,7 @@ section{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 0 60px 0 0 ;
+    padding: 0 70px 0 0 ;
     box-sizing: border-box;
     color: #000;
     width: 100%;
@@ -534,6 +558,8 @@ section{
 .il_floor1 > li > a:focus::after{
     background-color: rgba(95, 99, 104, 0.19);
 }
+
+
 
 .career_list_box{
     visibility: hidden;
@@ -648,17 +674,28 @@ section{
     background-color: rgba(95, 99, 104, 0.19);
 }
 
+.il_txt{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px 0;
+}
+
 .il_txt em{
     font-size: 22px;
     font-weight: 700;
     display: block;
-    margin-bottom: 8px;
+    color: #000;
 }
 
 .il_txt span{
     font-size: 14px;
-    color: #00000050;
+    color: rgba(0, 0, 0, 0.2);
     letter-spacing: -1px;
+    display: inline-block;
+    height: max-content;
 }
 
 .skill_list{
@@ -733,11 +770,20 @@ section{
 }
 
 .wl_img{
+    position: relative;
     width: 100%;
     height: 260px;
     overflow: hidden;
     user-select: none;
+    transition: all .5s ease;
+    box-shadow: 0px 0px 20px rgba(18, 32, 144, 0.15);
 }
+
+.wl_floor1 > li > a:focus .wl_img,
+.wl_floor1 > li > a:hover .wl_img{
+    box-shadow: 0px 0px 20px rgba(18, 32, 144, 0.34);
+}
+
 
 .wl_img img{
     display: block;
@@ -745,7 +791,7 @@ section{
     height: 100%;
     object-fit: cover;
     object-position: top;
-    transition: all .3s ease;
+    transition: all .5s ease;
 }
 
 .wl_floor1 > li > a:focus .wl_img img,
@@ -792,7 +838,7 @@ section{
 .wl_desc p{
     padding-top: 10px;
     font-size: 15px;
-    color: rgba(0, 0, 0, 0.25);
+    color: rgba(0, 0, 0, 0.2);
     font-weight: 400;
     line-height: 1.2;
 }
@@ -832,6 +878,25 @@ section{
     height: 280px;
     z-index: -1;
 }
+
+
+.ccl_img::after{
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.2) 15%, rgba(0, 0, 0, 0) 70%);
+    transition: all .5s ease;
+}
+
+.ccl_floor1 > li > a:hover .ccl_img::after,
+.ccl_floor1 > li > a:focus .ccl_img::after{
+    opacity: 0;
+}
+
 /* 
 .ccl_img::after{
     display: block;
@@ -868,7 +933,7 @@ section{
     flex-wrap: wrap;
     flex-direction: column;
     box-shadow: 0px 0px 20px rgba(18, 32, 144, 0.2);
-    transition: all .23s ease;
+    transition: all .3s ease;
 }
 
 .ccl_floor1 > li > a:hover .ccl_desc,
