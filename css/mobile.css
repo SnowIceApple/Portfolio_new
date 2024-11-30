@@ -111,6 +111,8 @@
     
     .il_floor1 > li > a{
         padding-right: 55px;
+        height: auto;
+        min-height: 70px;
     }
 
     .il_floor1 > li > a::after{
@@ -211,7 +213,8 @@
     }
 
     .il_txt em{
-        font-size: 18px;
+        font-size: 20px;
+        margin-right: 10px;
     }
 
     .career_list ul li span{
