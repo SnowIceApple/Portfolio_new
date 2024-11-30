@@ -87,7 +87,7 @@
     }
 
     .main_slide{
-        margin-bottom: 60px;
+        margin-bottom: 50px;
     }
 
     .main_slide_control{
@@ -107,6 +107,10 @@
 
     .il_floor1 > li.type1{
         width: 100%;
+    }
+    
+    .il_floor1 > li > a{
+        padding-right: 55px;
     }
 
     .il_floor1 > li > a::after{
