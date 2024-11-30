@@ -53,7 +53,7 @@
 
 @media screen and (max-width: 864px) and (max-height: 500px){
     .career_list ul{
-        max-height: calc(100vh - 75px) !important;
+        max-height: calc(100dvh - 80px);
     }
 }
 
