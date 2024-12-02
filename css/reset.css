@@ -110,3 +110,11 @@ input::-webkit-search-results-decoration{
 	text-indent: -9999px;
 	overflow: hidden;
 }
+
+.noScrollbar{
+	-ms-overflow-style: none;
+ }
+
+ .noScrollbar::-webkit-scrollbar{
+   display:none;
+ }

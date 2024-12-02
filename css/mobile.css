@@ -20,16 +20,32 @@
         width: calc(50% - 15px);
     }
 
-    .go_top{
-        right: 20px;
-    }
-
     .ccl_floor1 > li{
         width: calc(50% - 15px);
     }
 
+    .cc_detail{
+        padding: 0 20px;
+    }
+
+    .cc_detail_close{
+        right: 0;
+    }
+
     .contact_link a{
         font-size: 36px;
+    }
+
+    .go_top{
+        right: 20px;
+    }
+
+    .cdc_inner:focus, .cdc_inner:hover{
+        background: transparent;
+    }
+
+    .cdc_inner:hover strong, .cdc_inner:focus strong{
+        border-color: transparent;
     }
 }
 
@@ -48,6 +64,42 @@
 
     .skill_list ul li em{
         font-size: 16px;
+    }
+
+    .cc_detail_img.type1 a{
+        padding-top: 56.25%;
+    }
+
+    .ccsn_mouse{
+        border-width: 3px;
+        width: 45px;
+        height: 90px;
+    }
+
+    .ccsn_mouse::before{
+        width: 9px;
+        height: 9px;
+    }
+
+    .cc_desc_card > li{
+        width: calc(50% - 0.5px);
+        min-height: 220px;
+    }
+
+    .cds_txt{
+        padding: 22px;
+    }
+
+    .cdc_inner{
+        padding: 24px 22px;
+    }
+
+    .cdc_inner > strong{
+        font-size: 20px;
+    }
+
+    .cdc_overlay{
+        width: calc(50% - 0.5px) !important;
     }
 }
 
@@ -245,6 +297,38 @@
         position: static;
         width: 100%;
     }
+    
+    .cc_detail_tit h2{
+        font-size: 36px;
+    }
+
+    .cc_detail_tit h2::before{
+        top: 10px;
+        height: 44px;
+    }
+
+    .cc_detail_subtit{
+        flex-direction: column-reverse;
+    }
+
+    .cc_detail_subtit > div{
+        width: 100%;
+    }
+
+    .cds_txt{
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 140px;
+    }
+
+    .cds_txt .txt_box{
+        height: auto;
+    }
+
+    .cds_img{
+        height: 210px;
+    }
+
 }
 
 @media screen and (max-width: 568px){
@@ -265,10 +349,64 @@
     .skill_icon_img img{
         width: 32px;
     }
+
+    .ccsn_mouse{
+        width: 35px;
+        height: 65px;
+        border-width: 2px;
+    }
+
+    .ccsn_mouse::before{
+        top: 10px;
+        width: 7px;
+        height: 7px;
+    }
+
+    .cc_detail_cate{
+        margin-bottom: 5px;
+    }
+
+    .cc_detail_cate ul li span{
+        font-size: 12px;
+        padding: 5px 9px;
+    }
+
+    .cc_detail_tit h2{
+        font-size: 28px;
+        padding-left: 20px;
+    }
+
+    .cc_detail_tit h2::before{
+        width: 5px;
+        top: 7px;
+        height: 40px;
+    }
+
+    .cds_txt .txt_box h3{
+        font-size: 22px;
+    }
+
+    .cdc_inner > strong{
+        font-size: 19px;
+    }
+
+    .cc_desc_card > li{
+        width: 100%;
+        min-height: 180px;
+    }
+
+    .cdc_overlay{
+        display: none;
+    }
+
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {
     html {
        -webkit-text-size-adjust: none;
+    }
+
+    .cc_detail_inner{
+        max-height: 100dvh;
     }
 }
