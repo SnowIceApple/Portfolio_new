@@ -1140,9 +1140,9 @@ section{
     content: "";
     position: absolute;
     left: 50%;
-    top: 25px;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
+    top: 0;
+    transform: translate(-50%, 20px);
+    -webkit-transform: translate(-50%, 20px);
     width: 12px;
     height: 12px;
     background: #fff;
@@ -1155,26 +1155,16 @@ section{
 
 
 @keyframes mouseMove{
-    1%{
-        opacity: 0;
-    }
-
-    2%{
+    0%{
         opacity: 1;
-    }
-
-    50%{
-        opacity: 1;
-    }
-
-    98%{
-        opacity: 0;
-        top: 50%;
+        transform: translate(-50%, 20px);
+        -webkit-transform: translate(-50%, 20px);
     }
 
     100%{
         opacity: 0;
-        top: 25px;
+        transform: translate(-50%, 55px);
+        -webkit-transform: translate(-50%, 55px);
     }
 }
 
