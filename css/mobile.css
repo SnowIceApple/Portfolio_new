@@ -381,6 +381,23 @@
         height: 7px;
     }
 
+    @keyframes mouseMove{
+
+        50%{
+            opacity: 1;
+        }
+    
+        99%{
+            opacity: 0;
+            top: 50%;
+        }
+    
+        100%{
+            opacity: 0;
+            top: 10px;
+        }
+    }
+
     .cc_detail_cate{
         margin-bottom: 5px;
     }
