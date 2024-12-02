@@ -1060,7 +1060,7 @@ section{
 .ccl_floor1 > li.active .cc_detail_close button{
     transform: translateX(0);
     -webkit-transform: translateX(0);
-    transition: all .8s ease-in-out;
+    transition: all .6s ease-in-out;
     transition-delay: 0.35s;
 }
 
