@@ -1160,11 +1160,15 @@ section{
         opacity: 1;
     }
 
-    100%{
+    99%{
         opacity: 0;
         top: 50%;
     }
 
+    100%{
+        opacity: 0;
+        top: 25px;
+    }
 }
 
 .cc_detail_img.type1 a picture{
