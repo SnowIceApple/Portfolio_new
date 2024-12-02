@@ -41,14 +41,16 @@ $(document).ready(function(){
       $('.il_floor1 > li > a').on('click', function(e){
         e.preventDefault();
         $(this).parent().addClass('active');
-        $('body').addClass('fixed nav_active modal_active');
+        $('body').addClass('nav_active modal_active');
+        $('html').css('overflow', 'hidden');
       });
 
       $(document).on('mouseup', function(e){
         if($('.modal').has(e.target).length === 0 && $('body').hasClass('modal_active') == true){
             $('.il_floor1 > li').removeClass('active');
             $('.ccl_floor1 > li').removeClass('active');
-            $('body').removeClass('fixed nav_active modal_active');
+            $('html').css('overflow', 'visible');
+            $('body').removeClass('nav_active modal_active');
         }
       });   
 
@@ -87,7 +89,8 @@ $(document).ready(function(){
       });
 
       $('.career_list_close button').on('click', function(){
-        $('body').removeClass('fixed nav_active modal_active');
+        $('html').css('overflow', 'visible');
+        $('body').removeClass('nav_active modal_active');
         $(this).closest('li').removeClass('active');
       }); 
 
@@ -118,7 +121,8 @@ $(document).ready(function(){
 
       $('.ccl_floor1 > li > a:not(.normal_link)').on('click', function(e){
         e.preventDefault();
-        $('body').addClass('fixed modal_active');
+        $('body').addClass('modal_active');
+        $('html').css('overflow', 'hidden');
         $(this).parent('li').addClass('active');
         // $('.cdc_inner').each(function(){
         //   if($(this).children().find('.cdc_floor2').height() > 150){
@@ -179,7 +183,8 @@ $(document).ready(function(){
       // });
 
       $('.cc_detail_close').on('click', function(){
-        $('body').removeClass('fixed nav_active modal_active');
+        $('body').removeClass('nav_active modal_active');
+        $('html').css('overflow', 'visible');
         $(this).closest('li').removeClass('active');
       }); 
 
