@@ -1065,6 +1065,8 @@ section{
 }
 
 .cc_detail_inner{
+    position: relative;
+    z-index: 250;
     width: 100%;
     max-width: 1300px;
     max-height: 100vh;
