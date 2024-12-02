@@ -1551,8 +1551,6 @@ section{
     transition: all .3s ease-in-out;
     will-change: opacity;
     overscroll-behavior: none;
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
 }
 
 .nav_active .fixed_bg,
