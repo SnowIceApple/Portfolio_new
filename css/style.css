@@ -1155,12 +1155,19 @@ section{
 
 
 @keyframes mouseMove{
+    1%{
+        opacity: 0;
+    }
+
+    2%{
+        opacity: 1;
+    }
 
     50%{
         opacity: 1;
     }
 
-    99%{
+    98%{
         opacity: 0;
         top: 50%;
     }
