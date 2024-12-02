@@ -1183,12 +1183,13 @@ section{
 .cc_detail_tit{
     width: 100%;
     padding-top: 20px;
-}
-
-.cc_detail_tit a{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+}
+
+.cc_detail_tit a{
+
 }
 
 .cc_detail_cate{
