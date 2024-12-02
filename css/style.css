@@ -1149,10 +1149,13 @@ section{
     border-radius: 50%;
     animation: mouseMove 1.5s infinite;
     animation-timing-function: ease;
+    will-change: opacity;
+    opacity: 1;
 }
 
 
 @keyframes mouseMove{
+
     50%{
         opacity: 1;
     }
@@ -1161,6 +1164,7 @@ section{
         opacity: 0;
         top: 50%;
     }
+
 }
 
 .cc_detail_img.type1 a picture{
@@ -1174,7 +1178,6 @@ section{
     box-sizing: border-box;
     user-select: none;
 }
-
 
 .cc_detail_img a picture img{
     width: 100%;
