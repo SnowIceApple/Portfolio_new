@@ -6,6 +6,7 @@ body{
 
 body.fixed{
     overflow: hidden;
+    touch-action: none;
 }
 
 #wrap{
@@ -894,7 +895,6 @@ section{
 }
 
 .ccl_floor1 > li{
-    position: relative;
     width: calc(33.3333% - 20px);
 }
 
@@ -912,7 +912,6 @@ section{
     height: 280px;
     z-index: -1;
 }
-
 
 .ccl_img::after{
     display: block;
@@ -1013,12 +1012,12 @@ section{
 
 .cc_detail_box{
     position: fixed;
-    left: 50%;
+    left: 0;
+    right: 0;
     bottom: 0;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
+    top: 0;
     width: 100%;
-    z-index: 250;
+    z-index: 210;
     box-sizing: border-box;
     background: #f2f4f9;
     opacity: 0;
@@ -1065,8 +1064,6 @@ section{
 }
 
 .cc_detail_inner{
-    position: relative;
-    z-index: 2;
     width: 100%;
     max-width: 1300px;
     max-height: 100vh;
