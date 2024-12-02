@@ -1453,7 +1453,7 @@ section{
 }
 
 .cdc_overlay.cont3{
-    width: calc(75% - 1px);
+    width: calc(75% - 0.25px);
 }
 
 /* contact */
