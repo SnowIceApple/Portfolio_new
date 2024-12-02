@@ -109,10 +109,10 @@ $(document).ready(function(){
 
       $('.cc_detail_img.type1 a picture').on('scroll', function(){
         if($(this).scrollTop() > 0){
-          $('.cc_detail_img').addClass('active');
+          $(this).closest('.cc_detail_img').addClass('active');
         }
         else{
-          $('.cc_detail_img').removeClass('active');
+          $(this).closest('.cc_detail_img').removeClass('active');
         }
       });
 
