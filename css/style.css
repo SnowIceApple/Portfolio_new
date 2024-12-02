@@ -567,6 +567,7 @@ section{
     transition: all .3s ease;
 }
 
+.il_floor1 > li > a:focus,
 .il_floor1 > li > a:hover{
     padding-left: 22px;
 }
