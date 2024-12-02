@@ -72,7 +72,7 @@
     }
 
     .cc_detail_img.type1 a{
-        padding-top: 56.25%;
+        padding-top: 420px;
     }
 
     .ccsn_mouse{
@@ -290,6 +290,8 @@
         width: 100%;
     }
 
+
+
     .ccl_floor1 > li{
         width: 100%;
     }
@@ -301,6 +303,10 @@
     .ccl_desc{
         position: static;
         width: 100%;
+    }
+
+    .cc_detail_img.type1 a{
+        padding-top: 380px;
     }
     
     .cc_detail_tit h2{
@@ -357,6 +363,10 @@
 
     .wl_img{
         height: 280px;
+    }
+
+    .cc_detail_img.type1 a{
+        padding-top: 320px;
     }
 
     .ccsn_mouse{
