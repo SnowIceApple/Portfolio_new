@@ -16,8 +16,13 @@
         padding: 0 20px;
     }
 
+
     .wl_floor1 > li{
         width: calc(50% - 15px);
+    }
+
+    .wl_img{
+        height: 320px;
     }
 
     .ccl_floor1 > li{

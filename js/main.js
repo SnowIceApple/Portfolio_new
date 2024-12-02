@@ -142,12 +142,18 @@ $(document).ready(function(){
 
       $('.cc_detail_img a').each(function(e){
         var tg = $(this);
-        if($(window).width() <= 1300){
-          tg.on('click', function(e){
+        tg.on('click', function(e){
+          if($(window).width() > 1300){
+            tg.unbind(e);
+          }
+          
+          if($(window).width() <= 1300){
             e.preventDefault();
-          });
-        }
+          }
+        });
+
       });
+
 
       // $('.cdc_inner').each(function(){
       //   $(this).children('.cdc_list').css({
