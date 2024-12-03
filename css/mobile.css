@@ -350,6 +350,14 @@
         height: auto;
     }
 
+    .cds_txt .txt_box h3{
+        font-size: 24px;
+    }
+
+    .cdc_inner > strong{
+        font-size: 19px;
+    }
+
     .cds_img{
         height: 210px;
     }
@@ -431,10 +439,6 @@
     /* .cds_txt .txt_box h3{
         font-size: 24px;
     } */
-
-    .cdc_inner > strong{
-        font-size: 20px;
-    }
 
     .cc_desc_card > li{
         width: 100%;
