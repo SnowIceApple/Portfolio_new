@@ -1089,7 +1089,6 @@ section{
 .cc_detail{
     width: 100%;
     box-sizing: border-box;
-    padding: 0 30px 0px 30px;
 }
 
 .cc_detail_top{
@@ -1196,10 +1195,12 @@ section{
 
 .cc_detail_tit{
     width: 100%;
-    padding-top: 20px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    box-sizing: border-box;
+    padding: 0 30px;
+    margin: 25px 0;
 }
 
 .cc_detail_cate{
@@ -1248,7 +1249,8 @@ section{
 
 .cc_detail_bot{
     width: 100%;
-    padding-top: 25px;
+    padding: 0 30px;
+    box-sizing: border-box;
 }
 
 .cc_detail_cont{

@@ -29,7 +29,11 @@
         width: calc(50% - 15px);
     }
 
-    .cc_detail{
+    .cc_detail_tit{
+        padding: 0 20px;
+    }
+
+    .cc_detail_bot{
         padding: 0 20px;
     }
 
@@ -365,6 +369,9 @@
 }
 
 @media screen and (max-width: 568px){
+    .cc_detail_tit{
+        margin: 15px 0;
+    }
     .skill_list ul{
         justify-content: flex-start;
         gap: 30px 0;
