@@ -1229,13 +1229,13 @@ section{
     display: flex;
     flex-wrap: wrap; 
     justify-content: center;
-    align-items: center;
     box-sizing: border-box;
     overscroll-behavior: none;
 }
 
 .gallery_container.wide .gallery_bg{
     padding: 70px 0;
+    align-items: center;
 }
 
 .gallery_bg picture{
@@ -1294,7 +1294,7 @@ section{
     width: 70px;
     height: 70px;
     background: url('../img/close_white_w300.png') center no-repeat;
-    background-size: auto 70%;
+    background-size: auto 60%;
 }
 
 .cc_detail_img a picture img{
