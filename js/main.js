@@ -202,4 +202,22 @@ $(document).ready(function(){
           $('.mobile_nav_btn button').focus();
         }
       });
+
+      $('.gallery_open button').on('click', function(){
+        $('.gallery_container').addClass('wide');
+        $('.cc_detail_close').hide();
+      });
+
+
+      $('.gallery_close button').on('click', function(){
+        $('.gallery_container').removeClass('wide');
+        $('.cc_detail_close').show();
+      });
+
+      $(document).on('mouseup', function(e){
+        if($('.gallery_pic').has(e.target).length === 0 && $('.gallery_site_link').has(e.target).length === 0){
+          $('.gallery_container').removeClass('wide');
+          $('.cc_detail_close').show();
+        }
+      });   
 });

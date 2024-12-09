@@ -75,7 +75,7 @@
         font-size: 16px;
     }
 
-    .cc_detail_img.type1 a{
+    .cc_detail_img{
         padding-top: 420px;
     }
 
@@ -323,7 +323,7 @@
         width: 100%;
     }
 
-    .cc_detail_img.type1 a{
+    .cc_detail_img{
         padding-top: 380px;
     }
     
@@ -394,7 +394,7 @@
         height: 280px;
     }
 
-    .cc_detail_img.type1 a{
+    .cc_detail_img{
         padding-top: 260px;
     }
 
@@ -465,5 +465,9 @@
 
     .cc_detail_box{
         max-height: 100dvh;
+    }
+
+    .gallery_bg{
+        height: 100dvh;
     }
 }
