@@ -1073,7 +1073,7 @@ section{
     background: #fff;
 }
 
-.cc_detail_inner::-webkit-scrollbar{
+/* .cc_detail_inner::-webkit-scrollbar{
     width: 4px;
 }
 
@@ -1084,7 +1084,7 @@ section{
 
 .cc_detail_inner::-webkit-scrollbar-track{
     background: rgba(0, 1, 15, 0.1);
-}
+} */
 
 .cc_detail{
     width: 100%;
@@ -1212,7 +1212,7 @@ section{
 .gallery_box{
     width: 100%;
     height: 100%;
-    background: #000;
+    background: rgba(0, 0, 0, 0.9);
     overscroll-behavior: none;
 }
 
