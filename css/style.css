@@ -1296,7 +1296,7 @@ section{
     width: 70px;
     height: 70px;
     background: url('../img/close_white_w300.png') center no-repeat;
-    background-size: auto 60%;
+    background-size: auto 50%;
 }
 
 .cc_detail_img a picture img{
