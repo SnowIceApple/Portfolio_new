@@ -1124,6 +1124,24 @@ section{
     background: linear-gradient(to top, rgba(0, 0, 0, 0.2) 15%, rgba(0, 0, 0, 0) 70%);
 }
 
+.gallery_container::before{
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+    opacity: 0;
+    transition: all .3s ease;
+    z-index: 2;
+}
+
+.gallery_container:hover::before{
+    opacity: 1;    
+}
+
 .gallery_open{
     position: absolute;
     right: 20px;
@@ -1134,7 +1152,7 @@ section{
 .gallery_open button{
     width: 50px;
     height: 50px;
-    background: #fff url('../img/gallery_open_gray.png') center no-repeat;
+    background: #fff url('../img/gallery_open_black.png') center no-repeat;
     border-radius: 50%;
     background-size: auto 60%;
 }
@@ -1278,7 +1296,7 @@ section{
     width: 70px;
     height: 70px;
     background: url('../img/open_in_new_white.png') center no-repeat;
-    background-size: auto 45%;
+    background-size: auto 40%;
 }
 
 .gallery_close{
