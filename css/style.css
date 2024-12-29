@@ -976,7 +976,7 @@ section{
     display: flex;
     flex-wrap: wrap;
     gap: 7px 10px;
-    margin-bottom: 10px;
+    margin-bottom: 13px;
 }
 
 .ccl_desc .cate_list li .cate{
@@ -1400,25 +1400,45 @@ section{
     padding-top: 20px;
 }
 
-.cc_detail_bot_link a{
+.cc_detail_bot_link ul{
     position: sticky;
-    top: 0px;
-    left: 0;
+    top: 0;
     z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 0;
+    flex-direction: column;
+}
+
+
+.cc_detail_bot_link a{
     display: block;
     width: 60px;
     height: 60px;
     border-radius: 50%;
     box-shadow: 0px 0px 20px rgba(95, 99, 104, 0.7);
-    background: #fff url('../img/open_in_new_blue.png') center no-repeat;
-    background-size: auto 50% !important;
     transition: all .15s;
     box-sizing: border-box;
 }
 
-.cc_detail_bot_link a:hover,
-.cc_detail_bot_link a:focus{
+.cc_detail_bot_link ul li:first-child a{
+    background: #fff url('../img/open_in_new_blue.png') center no-repeat;
+    background-size: auto 50% !important;
+}
+
+.cc_detail_bot_link ul li:first-child a:hover,
+.cc_detail_bot_link ul li:first-child a:focus{
     background: #0F1E85 url('../img/open_in_new_white.png') center no-repeat;
+}
+
+.cc_detail_bot_link ul li:last-child a{
+    background: #fff url('../img/ori_site_bl.png') center no-repeat;
+    background-size: auto 60% !important;
+}
+
+.cc_detail_bot_link ul li:last-child a:hover,
+.cc_detail_bot_link ul li:last-child a:focus{
+    background: #222 url('../img/ori_site_wh.png') center no-repeat;
 }
 
 .cc_detail_bot_box{
