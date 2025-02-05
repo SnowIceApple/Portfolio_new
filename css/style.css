@@ -1465,8 +1465,8 @@ section{
     background-size: auto 50% !important;
 }
 
-.cc_detail_bot_link ul li:first-child a:hover,
-.cc_detail_bot_link ul li:first-child a:focus{
+.cc_detail_bot_link ul li:first-child:hover a,
+.cc_detail_bot_link ul li:first-child:focus a{
     background: #0F1E85 url('../img/open_in_new_white.png') center no-repeat;
 }
 
@@ -1475,8 +1475,8 @@ section{
     background-size: auto 60% !important;
 }
 
-.cc_detail_bot_link ul li:last-child a:hover,
-.cc_detail_bot_link ul li:last-child a:focus{
+.cc_detail_bot_link ul li:last-child:hover a,
+.cc_detail_bot_link ul li:last-child:focus a{
     background: #222 url('../img/ori_site_wh.png') center no-repeat;
 }
 
