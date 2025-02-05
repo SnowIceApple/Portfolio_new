@@ -729,7 +729,7 @@ section{
 
 .skill_list{
     width: 100%;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 .skill_list ul{
@@ -1410,8 +1410,47 @@ section{
     flex-direction: column;
 }
 
+.cc_detail_bot_link ul li{
+    position: relative;
+}
 
-.cc_detail_bot_link a{
+.cdbl_desc{
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-right: 15px;
+    z-index: -1;
+    visibility: hidden;
+}
+
+.cc_detail_bot_link ul li:focus .cdbl_desc,
+.cc_detail_bot_link ul li:hover .cdbl_desc{
+    visibility: visible;
+}
+
+.cdbl_desc span{
+    display: block;
+    white-space: nowrap;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #444;
+    background: #fff;
+    font-weight: 500;
+    border-radius: 999px;
+    transform: translateX(40px);
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.cc_detail_bot_link ul li:focus .cdbl_desc span,
+.cc_detail_bot_link ul li:hover .cdbl_desc span{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+.cc_detail_bot_link ul li a{
     display: block;
     width: 60px;
     height: 60px;
