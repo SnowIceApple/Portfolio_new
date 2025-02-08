@@ -329,6 +329,12 @@
     
     .cc_detail_tit h2{
         font-size: 36px;
+        padding: 10px 0;
+        transform: translateY(30px);
+    }
+
+    .ccl_floor1 > li.active .cc_detail_tit h2{
+        transition: all 1s ease;
     }
 
     .cc_detail_tit h2::before{
@@ -370,7 +376,7 @@
 
 @media screen and (max-width: 568px){
     .cc_detail_tit{
-        margin: 15px 0;
+        margin: 20px 0;
     }
     .skill_list ul{
         justify-content: flex-start;
@@ -434,7 +440,6 @@
 
     .cc_detail_tit h2{
         font-size: 28px;
-        padding-left: 20px;
     }
 
     .cc_detail_tit h2::before{
