@@ -220,4 +220,15 @@ $(document).ready(function(){
           $('.cc_detail_close').show();
         }
       });   
+
+      $('.gallery_pic').on('scroll', function(){
+
+        var gpc = $('.gallery_pic_container');
+        if($(this).scrollTop() > 0){
+          gpc.addClass('active');
+        }
+        else{
+          gpc.removeClass('active');
+        }
+      });
 });

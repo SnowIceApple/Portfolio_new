@@ -117,12 +117,24 @@
         padding: 24px 22px;
     }
 
+    .cc_detail_tit h2{
+        font-size: 40px;
+    }
+
+    .cds_txt .txt_box h3{
+        font-size: 30px;
+    }
+
     .cdc_inner > strong{
         font-size: 20px;
     }
 
     .cdc_overlay{
         width: calc(50% - 0.5px) !important;
+    }
+
+    .gp_scroll_down{
+        display: none;
     }
 }
 
@@ -335,6 +347,7 @@
 
     .ccl_floor1 > li.active .cc_detail_tit h2{
         transition: all 1s ease;
+        transition-delay: 0.3s;
     }
 
     .cc_detail_tit h2::before{
