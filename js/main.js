@@ -1,4 +1,7 @@
 $(document).ready(function(){
+
+  AOS.init();
+  
     const swiper1 = new Swiper('.main_slide', {
         // Optional parameters
         direction: 'horizontal',

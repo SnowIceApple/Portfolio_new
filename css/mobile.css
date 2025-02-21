@@ -37,6 +37,10 @@
         padding: 0 20px;
     }
 
+    .gallery_open{
+        right: 20px;
+    }
+
     .cc_detail_close{
         right: 0;
     }
@@ -105,7 +109,7 @@
     }
 
     .cc_desc_card > li{
-        width: calc(50% - 0.5px);
+        width: calc(50% - 10px);
         min-height: 220px;
     }
 
@@ -276,9 +280,9 @@
         display: flex;
     }
 
-    .contact_link a{
+    /* .contact_link a{
         font-size: 20px;
-    }
+    } */
 
     #footer{
         padding-bottom: 70px;
