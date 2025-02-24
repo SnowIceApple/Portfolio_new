@@ -1073,9 +1073,10 @@ section{
     max-width: 1300px;
     height: 100%;
     overflow: auto;
-    padding: 30px 0 90px 0;
+    padding-bottom: 90px;
     box-sizing: border-box;
     background: #fff;
+    border-top: 30px solid #05b2fc;
 }
 
 /* .cc_detail_inner::-webkit-scrollbar{
@@ -1426,17 +1427,18 @@ section{
     padding: 10px 15px;
     border-radius: 999px;
     font-size: 14px;
-    color: #555;
+    color: #333;
     font-weight: 500;
     letter-spacing: -0.5px;
     box-sizing: border-box;
+    background: #f2f4f9;
 }
 
 .cc_detail_tit h2{
     position: relative;
     font-size: 48px;
     font-weight: 900;
-    color: #000;
+    color: #002186;
     letter-spacing: -1px;
     line-height: 1.2;
     box-sizing: border-box;
@@ -1652,7 +1654,6 @@ section{
     flex-wrap: wrap;
     gap: 20px;
     margin-top: 15px;
-    /* background: #e0e0e0; */
 }
 
 .cc_desc_card > li{
@@ -1671,8 +1672,8 @@ section{
     flex-wrap: wrap;
     flex-direction: column;
     transition: all .2s ease;
-    gap: 12px 0;
     border: 1px solid #000;
+    gap: 5px 0;
 }
 
 /* .cdc_inner:focus,
@@ -1698,9 +1699,9 @@ section{
 }
 
 .cdc_inner > strong{
-    font-size: 22px;
-    color: #222;
-    font-weight: 400;
+    font-size: 18px;
+    color: #002186;
+    font-weight: 700;
     letter-spacing: -0.6px;
     line-height: 1.2;
     display: block;
@@ -1731,10 +1732,10 @@ section{
 }
 
 .cdc_floor2 li p{
-    font-size: 15px;
+    font-size: 14.5px;
     line-height: 1.4;
-    font-weight: 300;
-    color: #333;
+    font-weight: 400;
+    color: #000821;
 }
 
 .cdc_overlay{

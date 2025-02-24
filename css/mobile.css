@@ -130,7 +130,7 @@
     }
 
     .cdc_inner > strong{
-        font-size: 20px;
+        /* font-size: 20px; */
     }
 
     .cdc_overlay{
@@ -382,7 +382,7 @@
     }
 
     .cdc_inner > strong{
-        font-size: 19px;
+        /* font-size: 19px; */
     }
 
     .cds_img{
