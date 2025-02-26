@@ -1496,7 +1496,7 @@ section{
 
 .cc_detail_bot_link ul{
     position: sticky;
-    top: 0;
+    top: 20px;
     z-index: 2;
     display: flex;
     flex-wrap: wrap;
