@@ -53,10 +53,6 @@
         right: 20px;
     }
 
-    .cdc_inner:focus, .cdc_inner:hover{
-        background: transparent;
-    }
-
     .cdc_inner:hover strong, .cdc_inner:focus strong{
         border-color: transparent;
     }
@@ -284,6 +280,14 @@
         font-size: 20px;
     } */
 
+    .cc_detail_bot{
+        padding: 0 15px;
+    }
+
+    .gallery_open{
+        right: 15px;
+    }
+
     #footer{
         padding-bottom: 70px;
     }
@@ -468,6 +472,9 @@
     /* .cds_txt .txt_box h3{
         font-size: 24px;
     } */
+    .cc_desc_card{
+        gap: 15px;
+    }
 
     .cc_desc_card > li{
         width: 100%;
