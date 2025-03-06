@@ -1081,6 +1081,10 @@ section{
     border-top: 30px solid #05b2fc;
 }
 
+.ccl_floor1 > li.active .cc_detail_inner:has(.wide){
+    border-top: none;
+}
+
 /* .cc_detail_inner::-webkit-scrollbar{
     width: 4px;
 }
@@ -1122,7 +1126,6 @@ section{
     height: 100%;
     overflow: hidden;
     box-sizing: border-box;
-    z-index: 2;
 }
 
 /* .gallery_container::after{
