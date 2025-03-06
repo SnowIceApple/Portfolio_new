@@ -265,7 +265,15 @@
     }
 
     .overZero .header_inner{
-        height: 65px;
+        height: 60px;
+    }
+
+    .overZero .logo a{
+        font-size: 20px;
+    }
+
+    .overZero .logo a img{
+        height: 42px;
     }
 
     .overZero #main{
@@ -286,6 +294,7 @@
 
     .gallery_open{
         right: 15px;
+        bottom: 15px;
     }
 
     #footer{
