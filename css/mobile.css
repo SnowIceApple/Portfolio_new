@@ -37,6 +37,8 @@
         padding: 0 20px;
     }
 
+
+
     .gallery_open{
         right: 20px;
     }
@@ -287,6 +289,10 @@
         padding: 16px 16px 85px 16px;
     }
 
+    .ccl_img{
+        height: 320px;
+    }
+
     /* .contact_link a{
         font-size: 20px;
     } */
@@ -434,7 +440,7 @@
     }
 
     .cc_detail_img{
-        padding-top: 260px;
+        padding-top: 320px;
     }
 
     .ccsn_mouse{
