@@ -808,11 +808,12 @@ section{
 .wl_img{
     position: relative;
     width: 100%;
-    height: 260px;
+    height: 300px;
     overflow: hidden;
     user-select: none;
     transition: all .5s ease;
     box-shadow: 0px 8px 15px rgba(18, 32, 144, 0.12);
+    border-radius: 25px;
 }
 
 .wl_floor1 > li > a:focus .wl_img,
@@ -827,19 +828,19 @@ section{
     height: 100%;
     object-fit: cover;
     object-position: top;
-    transition: all .5s ease;
+    transition: all .7s ease;
 }
 
 .wl_floor1 > li > a:focus .wl_img img,
 .wl_floor1 > li > a:hover .wl_img img{
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
+    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
 }
 
 .wl_desc{
     width: 100%;
     box-sizing: border-box;
-    padding: 22px 20px;
+    padding: 22px 0px;
     box-sizing: border-box;
 }
 
@@ -865,8 +866,8 @@ section{
 .wl_desc em{
     display: block;
     color: #222;
-    font-size: 19px;
-    letter-spacing: -0.5px;
+    font-size: 22px;
+    letter-spacing: -0.3px;
     font-weight: 700;
     line-height: 1.2;
 }
@@ -906,6 +907,28 @@ section{
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 20px 20px 85px 20px;
+    border-radius: 25px;
+    background: #f5f5f7;
+}
+
+.ccl_floor1 > li > a::after{
+    display: block;
+    content: "";
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    background: #fff url('../img/arrow_forward.png') center no-repeat;
+    background-size: 50% !important;
+    border-radius: 50%;
+    transition: all .3s ease;
+}
+
+.ccl_floor1 > li > a:hover::after{
+    background: #000 url('../img/arrow_forward_wh.png') center no-repeat;
 }
 
 .ccl_img{
@@ -914,10 +937,10 @@ section{
     overflow: hidden;
     width: 100%;
     height: 280px;
-    z-index: -1;
+    border-radius: 22px;
 }
 
-.ccl_img::after{
+/* .ccl_img::after{
     display: block;
     content: "";
     position: absolute;
@@ -932,7 +955,7 @@ section{
 .ccl_floor1 > li > a:hover .ccl_img::after,
 .ccl_floor1 > li > a:focus .ccl_img::after{
     opacity: 0;
-}
+} */
 
 /* 
 .ccl_img::after{
@@ -956,27 +979,29 @@ section{
     height: 100%;
     object-fit: cover;
     object-position: top;
+    transition: all .6s ease;
+    transform-origin: top;
+}
+
+.ccl_floor1 > li > a:hover .ccl_img img{
+    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
 }
 
 .ccl_desc{
-    position: absolute;
-    left: 20px;
-    bottom: -30px;
     box-sizing: border-box;
-    padding: 20px 25px 30px 25px;
-    width: calc(100% - 60px);
-    background: #fff;
+    padding: 25px 0 0 0;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    box-shadow: 0px 0px 20px rgba(18, 32, 144, 0.25);
     transition: all .3s ease;
 }
 
-.ccl_floor1 > li > a:hover .ccl_desc,
+/* .ccl_floor1 > li > a:hover .ccl_desc,
 .ccl_floor1 > li > a:focus .ccl_desc{
     bottom: -10px;
-}
+} */
 
 .ccl_desc .cate_list{
     width: 100%;
@@ -992,9 +1017,10 @@ section{
     padding: 5px 12px;
     font-size: 13px;
     color: #333;
-    background: #f5f6f7;
     border-radius: 999px;
     box-sizing: border-box;
+    border: 1px solid #333;
+    background: transparent;
 }
 /* 
 .ccl_desc span.cate.color1{
@@ -1007,9 +1033,9 @@ section{
 
 .ccl_desc em{
     display: block;
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: -0.5px;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
     line-height: 1.2;
     color: #000;
 }
