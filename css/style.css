@@ -609,7 +609,7 @@ section{
     max-width: 1300px;
     z-index: 250;
     transition: bottom 0.35s;
-    transition-delay: 0.1s;
+    transition-delay: 0.15s;
     will-change: opacity, bottom;
 }
 
@@ -1051,7 +1051,7 @@ section{
     max-height: 100dvh;
     z-index: 250;
     box-sizing: border-box;
-    background: #000;
+    background: #e9e9e9;
     opacity: 0;
     visibility: hidden;
     transition: opacity .3s ease-in-out, visibility 0.3s;
@@ -1097,7 +1097,7 @@ section{
 
 .cc_detail_inner{
     position: relative;
-    z-index: 250;
+    z-index: 260;
     width: 100%;
     max-width: 1300px;
     height: 100%;

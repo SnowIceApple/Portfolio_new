@@ -230,7 +230,6 @@
     }
 
     .wl_desc{
-        padding: 20px 15px;
     }
 
     .ccl_desc{
@@ -346,7 +345,9 @@
         width: 100%;
     }
 
-
+    .wl_desc em{
+        font-size: 18px;
+    }
 
     .ccl_floor1 > li{
         width: 100%;
@@ -359,6 +360,10 @@
     .ccl_desc{
         position: static;
         width: 100%;
+    }
+
+    .ccl_desc em{
+        font-size: 18px;
     }
 
     .cc_detail_img{
