@@ -234,4 +234,110 @@ $(document).ready(function(){
           gpc.removeClass('active');
         }
       });
+
+    var startPos = 0;
+    var pagePos = 0;
+    var scrollY = 0;
+    var standPos = 0;
+    var scrollPrevented = false;
+    var winHeight = $(window).innerHeight();
+
+
+
+    $('.mobile_nav_btn').each(function(){
+
+        $(this).on('touchstart', function(e){
+            startPos = pagePos;
+    
+            $(this).on('touchmove', function(e2){
+                $('.mNav_box').addClass('onSlide');
+                scrollY = e.originalEvent.targetTouches[0].pageY;
+                pagePos = startPos + scrollY - e2.originalEvent.targetTouches[0].pageY;
+                if(pagePos >= winHeight){
+                    pagePos = winHeight;
+                }
+                else if(pagePos <= 65){
+                    pagePos = 65;
+                }
+                
+                if(scrollPrevented == false){
+                    scrollPrevented = true;
+                    $('.mNav_box').on('touchmove', function(e){
+                        e.preventDefault();        
+                    });
+                }
+
+    
+                // console.log(startPos);
+                // console.log(pagePos);
+    
+                $('.mNav_box').css({
+                    top: - pagePos + 'px',
+                });
+
+                $(this).off('touchend').on('touchend', function(){
+                    $('.mNav_box').removeClass('onSlide');
+
+                    if(startPos - pagePos > 0 && pagePos <= winHeight - 130){
+                        $(this).addClass('mNav_slideDown');
+                        $(this).removeClass('mNav_slideUp');
+                        pagePos = 65;
+                        $('.mNav_box').css({
+                            top: - pagePos + 'px',
+                        });
+                    }
+                    if(startPos - pagePos > 0 && pagePos > winHeight - 130){
+                        pagePos = winHeight;
+                        $('.mNav_box').css({
+                            top: - pagePos + 'px',
+                        });
+                        $(this).removeClass('mNav_slideDown');
+                        $(this).addClass('mNav_slideUp');
+                    }
+
+                    if(startPos - pagePos < 0 && pagePos >= 180){
+                        $(this).addClass('mNav_slideUp');
+                        $(this).removeClass('mNav_slideDown');
+                        pagePos = winHeight;
+                        $('.mNav_box').css({
+                            top: - pagePos + 'px',
+                        });
+                    }
+                    if(startPos - pagePos < 0 && pagePos < 180){
+                        pagePos = 65;
+                        $('.mNav_box').css({
+                            top: - pagePos + 'px',
+                        });
+                        $(this).removeClass('mNav_slideUp');
+                        $(this).addClass('mNav_slideDown');
+                    }
+
+                    // console.log(pagePos);
+    
+                    startPos = pagePos;
+
+                });
+
+            });
+
+            $(this).off('touchend').on('touchend', function() {
+                scrollPrevented = false;
+
+                // console.log(standPos);
+
+            });
+    
+        });
+
+    });
+
+    $('#mobile_nav > ul > li > a').on('click', function(){
+      pagePos = 65;
+      $('.mNav_box').css({
+        top: - pagePos + 'px',
+      });
+
+      $('.mobile_nav_btn').removeClass('mNav_slideUp', 'mNav_slideDown');
+    });
+
 });
