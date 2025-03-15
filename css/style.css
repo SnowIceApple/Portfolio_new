@@ -260,11 +260,11 @@ section{
     padding: 17px 15px;
     box-sizing: border-box;
     color: #000;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 300;
     /* background: rgba(95, 99, 104, 0.07); */
     transition: all .1s ease;
-    letter-spacing: -0.7px;
+    letter-spacing: -0.4px;
     border-bottom: 1px solid #d0d0d0;
 }
 
