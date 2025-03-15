@@ -240,13 +240,14 @@ $(document).ready(function(){
     var scrollY = 0;
     var standPos = 0;
     var scrollPrevented = false;
-    var winHeight = $(window).innerHeight();
 
 
 
     $('.mobile_nav_btn').each(function(){
 
         $(this).on('touchstart', function(e){
+        var winHeight = $(window).innerHeight();
+
             startPos = pagePos;
     
             $(this).on('touchmove', function(e2){
