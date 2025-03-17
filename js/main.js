@@ -378,6 +378,30 @@ $(document).ready(function(){
         $(this).children().find('.hidden_text').text('전체메뉴 열기');
         $('#wrap').removeClass('mNav_active');
       }
+      
+      if($(this).hasClass('mNav_slideUp')){
+        var scrollTop = $(window).scrollTop();
+        $('#content_box').css({
+          position: 'fixed',
+          top: - scrollTop + 'px',
+      });
+        $('body').addClass('mNav_active');
+      }
+      else{
+        var scrollTop2 = parseInt($('#content_box').css('top')) * -1;
+        console.log(scrollTop2);
+          $('body').removeClass('mNav_active');
+            $('#content_box').css({
+              position: 'relative',
+            });
+            setTimeout(() => {
+              $(window).scrollTop(scrollTop2);
+              $('#content_box').css({
+                top: 0,
+              });
+            }, 50);
+
+      }
 
     });
 
