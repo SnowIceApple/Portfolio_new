@@ -324,7 +324,8 @@ $(document).ready(function(){
         top: - pagePos + 'px',
       });
 
-      $('.mobile_nav_btn').removeClass('mNav_slideUp', 'mNav_slideDown');
+      $('.mobile_nav_btn').removeClass('mNav_slideUp');
+      $('.mobile_nav_btn').addClass('mNav_slideDown');
     });
 
     $('.mobile_nav_btn').on('click', function(){
@@ -343,6 +344,8 @@ $(document).ready(function(){
         $('.mNav_box').css({
           top: - pagePos + 'px',
         });
+        window.scrollBy(0, 1);
+        window.scrollBy(0, -1);
         $(this).addClass('mNav_slideDown');
         $(this).removeClass('mNav_slideUp');
         $(this).children().find('.hidden_text').text('전체메뉴 열기');
