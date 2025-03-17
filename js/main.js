@@ -232,10 +232,16 @@ $(document).ready(function(){
     var scrollPrevented = false;
     var winHeight = window.document.documentElement.clientHeight;
 
+    $(window).on('scroll', function(){
+      var scrollTop = $(window).scrollTop();
+      console.log(scrollTop);
+    });
+
     $('.mobile_nav_btn').each(function(){
 
         $(this).on('touchstart', function(e){
           var winHeight = window.document.documentElement.clientHeight;
+
             startPos = pagePos;
     
             $(this).on('touchmove', function(e2){
@@ -297,7 +303,30 @@ $(document).ready(function(){
                     window.scrollBy(0, 100);
                     window.scrollBy(0, -100);
 
-                    // console.log(pagePos);
+                    if($(this).hasClass('mNav_slideUp')){
+                      var scrollTop = $(window).scrollTop();
+                      $('#content_box').css({
+                        position: 'fixed',
+                        top: - scrollTop + 'px',
+                    });
+                      $('body').addClass('mNav_active');
+                    }
+                    else{
+                      var scrollTop2 = parseInt($('#content_box').css('top')) * -1;
+                      console.log(scrollTop2);
+                        $('body').removeClass('mNav_active');
+                          $('#content_box').css({
+                            position: 'relative',
+                          });
+                          setTimeout(() => {
+                            $(window).scrollTop(scrollTop2);
+                            $('#content_box').css({
+                              top: 0,
+                            });
+                          }, 50);
+
+                    }
+                    console.log(pagePos);
     
                     startPos = pagePos;
 
@@ -337,6 +366,7 @@ $(document).ready(function(){
         $(this).removeClass('mNav_slideDown');
         $(this).addClass('mNav_slideUp');
         $(this).children().find('.hidden_text').text('전체메뉴 닫기');
+        $('#wrap').addClass('mNav_active');
       }
       else if($(this).hasClass('mNav_slideUp')){
         pagePos = 65;
@@ -346,6 +376,7 @@ $(document).ready(function(){
         $(this).addClass('mNav_slideDown');
         $(this).removeClass('mNav_slideUp');
         $(this).children().find('.hidden_text').text('전체메뉴 열기');
+        $('#wrap').removeClass('mNav_active');
       }
 
     });
