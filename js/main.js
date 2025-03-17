@@ -74,16 +74,6 @@ $(document).ready(function(){
         }
       );
 
-      $('.mobile_nav_btn button').on('click', function(){
-        $('.mobile_nav_box').toggleClass('active');
-        if($(this).parent().parent().hasClass('active')){
-          $(this).children('.hidden_text').text('전체메뉴 닫기');
-        }
-        else{
-          $(this).children('.hidden_text').text('전체메뉴 열기');
-        }
-      });
-
       $('.go_top button').on('click', function(){
         $('.header_inner').focus();
         $('html, body').animate({
@@ -240,14 +230,12 @@ $(document).ready(function(){
     var scrollY = 0;
     var standPos = 0;
     var scrollPrevented = false;
-
-
+    var winHeight = $(window).innerHeight();
 
     $('.mobile_nav_btn').each(function(){
 
         $(this).on('touchstart', function(e){
-        var winHeight = $(window).innerHeight();
-
+        
             startPos = pagePos;
     
             $(this).on('touchmove', function(e2){
@@ -283,15 +271,9 @@ $(document).ready(function(){
                         $(this).addClass('mNav_slideDown');
                         $(this).removeClass('mNav_slideUp');
                         pagePos = 65;
-                        $('.mNav_box').css({
-                            top: - pagePos + 'px',
-                        });
                     }
                     if(startPos - pagePos > 0 && pagePos > winHeight - 130){
                         pagePos = winHeight;
-                        $('.mNav_box').css({
-                            top: - pagePos + 'px',
-                        });
                         $(this).removeClass('mNav_slideDown');
                         $(this).addClass('mNav_slideUp');
                     }
@@ -300,17 +282,21 @@ $(document).ready(function(){
                         $(this).addClass('mNav_slideUp');
                         $(this).removeClass('mNav_slideDown');
                         pagePos = winHeight;
-                        $('.mNav_box').css({
-                            top: - pagePos + 'px',
-                        });
+
                     }
                     if(startPos - pagePos < 0 && pagePos < 180){
                         pagePos = 65;
-                        $('.mNav_box').css({
-                            top: - pagePos + 'px',
-                        });
                         $(this).removeClass('mNav_slideUp');
                         $(this).addClass('mNav_slideDown');
+                    }
+
+                    $('.mNav_box').css({
+                      top: - pagePos + 'px',
+                    });
+
+                    if($(this).hasClass('mNav_slideUp')){
+                      window.scrollBy(0, 1);
+                      window.scrollBy(0, -1);
                     }
 
                     // console.log(pagePos);
@@ -340,5 +326,30 @@ $(document).ready(function(){
 
       $('.mobile_nav_btn').removeClass('mNav_slideUp', 'mNav_slideDown');
     });
+
+    $('.mobile_nav_btn').on('click', function(){
+      if($(this).hasClass('mNav_slideDown')){
+        pagePos = winHeight;
+        $('.mNav_box').css({
+          top: - pagePos + 'px',
+        });
+        $(this).removeClass('mNav_slideDown');
+        $(this).addClass('mNav_slideUp');
+        $(this).children().find('.hidden_text').text('전체메뉴 닫기');
+
+      }
+      else if($(this).hasClass('mNav_slideUp')){
+        pagePos = 65;
+        $('.mNav_box').css({
+          top: - pagePos + 'px',
+        });
+        $(this).addClass('mNav_slideDown');
+        $(this).removeClass('mNav_slideUp');
+        $(this).children().find('.hidden_text').text('전체메뉴 열기');
+      }
+
+    });
+
+
 
 });
