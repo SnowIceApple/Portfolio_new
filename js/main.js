@@ -294,8 +294,8 @@ $(document).ready(function(){
                       top: - pagePos + 'px',
                     });
 
-                    window.scrollBy(0, 55);
-                    window.scrollBy(0, -55);
+                    window.scrollBy(0, 100);
+                    window.scrollBy(0, 0);
 
                     // console.log(pagePos);
     
@@ -327,8 +327,8 @@ $(document).ready(function(){
     });
 
     $('.mobile_nav_btn').on('click', function(){
-      window.scrollBy(0, 55);
-      window.scrollBy(0, -55);
+      window.scrollBy(0, 100);
+      window.scrollBy(0, 0);
       if($(this).hasClass('mNav_slideDown')){
         pagePos = winHeight;
         $('.mNav_box').css({
