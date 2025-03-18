@@ -52,7 +52,7 @@ $(document).ready(function(){
         if($('.modal').has(e.target).length === 0 && $('body').hasClass('modal_active') == true){
             $('.il_floor1 > li').removeClass('active');
             $('.ccl_floor1 > li').removeClass('active');
-            $('html').css('overflow', 'visible');
+            $('html').css('overflow', 'auto');
             $('body').removeClass('nav_active modal_active');
         }
       });   
@@ -298,7 +298,7 @@ $(document).ready(function(){
 
                     $('.mNav_box').css({
                       top: - pagePos + 'px',
-                    });
+                    }); 
 
                     window.scrollBy(0, 100);
                     window.scrollBy(0, -100);
