@@ -376,7 +376,6 @@ $(document).ready(function(){
         $(this).removeClass('mNav_slideDown');
         $(this).addClass('mNav_slideUp');
         $(this).children().find('.hidden_text').text('전체메뉴 닫기');
-        $('#wrap').addClass('mNav_active');
       }
       else if($(this).hasClass('mNav_slideUp')){
         pagePos = 65;
@@ -386,7 +385,6 @@ $(document).ready(function(){
         $(this).addClass('mNav_slideDown');
         $(this).removeClass('mNav_slideUp');
         $(this).children().find('.hidden_text').text('전체메뉴 열기');
-        $('#wrap').removeClass('mNav_active');
       }
       
       if($(this).hasClass('mNav_slideUp')){
@@ -395,19 +393,19 @@ $(document).ready(function(){
           position: 'fixed',
           top: - scrollTop + 'px',
       });
-        $('body').addClass('mNav_active');
+      $('body').addClass('mNav_active');
       }
       else{
         var scrollTop2 = parseInt($('#content_box').css('top')) * -1;
         console.log(scrollTop2);
-          $('body').removeClass('mNav_active');
+        $('body').removeClass('mNav_active');
             $('#content_box').css({
+              position: 'relative',
             });
             setTimeout(() => {
               $(window).scrollTop(scrollTop2);
               $('#content_box').css({
                 top: 0,
-                position: 'relative',
               });
             }, 50);
 
