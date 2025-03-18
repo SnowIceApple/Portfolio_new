@@ -353,6 +353,15 @@ $(document).ready(function(){
 
       $('.mobile_nav_btn').removeClass('mNav_slideUp');
       $('.mobile_nav_btn').addClass('mNav_slideDown');
+      $('body').removeClass('mNav_active');
+      $('#content_box').css({
+        position: 'relative',
+        top: 0,
+      });
+
+      window.scrollBy(0, 100);
+      window.scrollBy(0, -100);
+      
     });
 
     $('.mobile_nav_btn').on('click', function(){
@@ -393,16 +402,17 @@ $(document).ready(function(){
         console.log(scrollTop2);
           $('body').removeClass('mNav_active');
             $('#content_box').css({
-              position: 'relative',
             });
             setTimeout(() => {
               $(window).scrollTop(scrollTop2);
               $('#content_box').css({
                 top: 0,
+                position: 'relative',
               });
             }, 50);
 
       }
+      
 
     });
 
