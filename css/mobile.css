@@ -308,6 +308,10 @@
     #footer{
         padding-bottom: 70px;
     }
+
+    .go_top{
+        bottom: 85px;
+    }
 }
 
 @media screen and (max-width: 680px){
