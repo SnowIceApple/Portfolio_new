@@ -203,14 +203,14 @@
     }
     
     .il_floor1 > li > a{
-        padding-right: 55px;
+        padding-right: 60px;
         height: auto;
         min-height: 70px;
     }
 
     .il_floor1 > li > a::after{
-        width: 40px;
-        height: 40px;
+        width: 43px;
+        height: 43px;
     }
 
     .career_tit{
@@ -306,7 +306,7 @@
     }
 
     #footer{
-        padding-bottom: 70px;
+        padding-bottom: 65px;
     }
 
     .go_top{
