@@ -114,7 +114,7 @@ $(document).ready(function(){
 
       $('.ccl_floor1 > li > a:not(.normal_link)').on('click', function(e){
         e.preventDefault();
-        $('body').addClass('modal_active');
+        // $('body').addClass('modal_active');
         $('html').css('overflow', 'hidden');
         $(this).parent('li').addClass('active');
         // $('.cdc_inner').each(function(){
