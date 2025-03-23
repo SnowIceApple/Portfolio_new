@@ -208,7 +208,7 @@ $(document).ready(function(){
       });
 
       $(document).on('mouseup', function(e){
-        if($('.gallery_pic').has(e.target).length === 0 && $('.gallery_site_link').has(e.target).length === 0){
+        if($('.gallery_pic_container').has(e.target).length === 0 && $('.gallery_site_link').has(e.target).length === 0){
           $('.gallery_container').removeClass('wide');
           $('.cc_detail_close').show();
         }
