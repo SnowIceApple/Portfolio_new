@@ -37,14 +37,13 @@
         padding: 0 20px;
     }
 
-
-
     .gallery_open{
         right: 20px;
     }
 
     .cc_detail_close{
         right: 0;
+        margin-right: 0;
     }
 
     .contact_link a{
