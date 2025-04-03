@@ -273,24 +273,24 @@ $(document).ready(function(){
                 $(this).off('touchend').on('touchend', function(){
                     $('.mNav_box').removeClass('onSlide');
 
-                    if(startPos - pagePos > 0 && pagePos <= winHeight - 130){
+                    if(startPos - pagePos > 0 && pagePos <= winHeight - 100){
                         $(this).addClass('mNav_slideDown');
                         $(this).removeClass('mNav_slideUp');
                         pagePos = 65;
                     }
-                    if(startPos - pagePos > 0 && pagePos > winHeight - 130){
+                    if(startPos - pagePos > 0 && pagePos > winHeight - 100){
                         pagePos = winHeight;
                         $(this).removeClass('mNav_slideDown');
                         $(this).addClass('mNav_slideUp');
                     }
 
-                    if(startPos - pagePos < 0 && pagePos >= 180){
+                    if(startPos - pagePos < 0 && pagePos >= 100){
                         $(this).addClass('mNav_slideUp');
                         $(this).removeClass('mNav_slideDown');
                         pagePos = winHeight;
 
                     }
-                    if(startPos - pagePos < 0 && pagePos < 180){
+                    if(startPos - pagePos < 0 && pagePos < 100){
                         pagePos = 65;
                         $(this).removeClass('mNav_slideUp');
                         $(this).addClass('mNav_slideDown');
