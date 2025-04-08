@@ -271,6 +271,10 @@
         height: 42px;
     }
 
+    #main{
+        padding-top: 130px;
+    }
+
     .overZero #main{
         padding-top: 60px;
     }
@@ -438,6 +442,10 @@
 
     #nav{
         display: none;
+    }
+    
+    #main{
+        padding-top: 80px;
     }
 
     .cc_detail_tit{
