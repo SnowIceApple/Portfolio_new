@@ -1,6 +1,15 @@
 $(document).ready(function(){
 
   AOS.init();
+
+  $(window).on('scroll', function(){
+    var wintop = $(window).scrollTop(),
+    docheight = $(document).height(),
+    winheight = $(window).height();
+    var scrolled = (wintop / (docheight - winheight)) * 100;
+
+    $('.progressBar').css('width', (scrolled + '%'));
+  });
   
     const swiper1 = new Swiper('.main_slide', {
         // Optional parameters
