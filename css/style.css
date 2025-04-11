@@ -1013,6 +1013,7 @@ section{
 
 .clone_coding_list{
     width: 100%;
+    padding-top: 30px;
 }
 
 .ccl_floor1{
@@ -1024,6 +1025,11 @@ section{
 .ccl_floor1 > li{
     position: relative;
     width: calc(33.3333% - 20px);
+    transition: all .3s ease;
+}
+
+.ccl_floor1 > li:hover{
+    transform: translateY(-30px);
 }
 
 
