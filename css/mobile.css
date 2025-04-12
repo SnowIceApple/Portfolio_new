@@ -25,6 +25,10 @@
         height: 320px;
     }
 
+    .clone_coding_list{
+        padding-top: 0px;
+    }
+
     .ccl_floor1 > li{
         width: calc(50% - 15px);
     }
