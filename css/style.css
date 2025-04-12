@@ -1922,6 +1922,7 @@ section{
     bottom: 0;
     background: #fafafa;
     height: 240px;
+    display: none;
 }
 
 .cdc_overlay.cont1{
