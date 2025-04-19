@@ -1770,7 +1770,6 @@ section{
     display: flex;
     flex-wrap: wrap;
     gap: 1px;
-    background: #e0e0e0;
     overflow: hidden;
     border-radius: 40px 40px 0 0;
 }
