@@ -335,7 +335,7 @@ $(document).ready(function(){
                           }, 50);
 
                     }
-                    console.log(pagePos);
+                    // console.log(pagePos);
     
                     startPos = pagePos;
 
@@ -422,6 +422,22 @@ $(document).ready(function(){
       
 
     });
+
+    // console.log(winHeight);
+
+$(window).on('scroll', function(){
+
+  // console.log(winHeight);
+
+  var scrollBottom = $('body').height() - $(window).height() - $(window).scrollTop();
+  console.log(scrollBottom);
+  if(scrollBottom < 42){
+    $('#footer').addClass('active');
+  }
+  else if($('#footer').hasClass('active') && scrollBottom > 42){
+    $('#footer').removeClass('active');
+  }
+});
 
 
 

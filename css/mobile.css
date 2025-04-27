@@ -439,6 +439,11 @@
 
 @media screen and (max-width: 568px){
 
+    section:last-of-type{
+        margin-bottom: 160px;
+    }
+
+
     .mobile_nav_container{
         display: flex;
     }
@@ -542,9 +547,18 @@
     }
 
     #footer{
-        padding-bottom: 65px;
+        position: absolute;
+        left: 0;
+        bottom: -145px;
+        width: 100%;
+        transition: all .5s ease;
+        transition-delay: 0.1s;
     }
 
+    #footer.active{
+        bottom: -95px;
+    }
+     
     .go_top{
         bottom: 85px;
     }
