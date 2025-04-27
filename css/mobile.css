@@ -111,7 +111,6 @@
 
     .cc_desc_card > li{
         width: calc(50% - 10px);
-        min-height: 220px;
     }
 
     .cds_txt{
@@ -536,7 +535,6 @@
 
     .cc_desc_card > li{
         width: 100%;
-        min-height: 180px;
     }
 
     .cdc_overlay{
