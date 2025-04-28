@@ -547,16 +547,10 @@
     }
 
     #footer{
-        position: absolute;
-        left: 0;
-        bottom: -145px;
-        width: 100%;
-        transition: all .5s ease;
-        transition-delay: 0.1s;
+        padding-bottom: 65px;
     }
 
     #footer.active{
-        bottom: -95px;
     }
      
     .go_top{

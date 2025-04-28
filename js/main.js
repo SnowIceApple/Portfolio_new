@@ -309,8 +309,8 @@ $(document).ready(function(){
                       top: - pagePos + 'px',
                     }); 
 
-                    window.scrollBy(0, 100);
-                    window.scrollBy(0, -100);
+                    // window.scrollBy(0, 100);
+                    // window.scrollBy(0, -100);
 
                     if($(this).hasClass('mNav_slideUp')){
                       var scrollTop = $(window).scrollTop();
@@ -368,8 +368,8 @@ $(document).ready(function(){
         top: 0,
       });
 
-      window.scrollBy(0, 100);
-      window.scrollBy(0, -100);
+      // window.scrollBy(0, 100);
+      // window.scrollBy(0, -100);
       
     });
 
@@ -425,19 +425,19 @@ $(document).ready(function(){
 
     // console.log(winHeight);
 
-$(window).on('scroll', function(){
+// $(window).on('scroll', function(){
 
-  // console.log(winHeight);
+//   // console.log(winHeight);
 
-  var scrollBottom = $('body').height() - $(window).height() - $(window).scrollTop();
-  console.log(scrollBottom);
-  if(scrollBottom < 42){
-    $('#footer').addClass('active');
-  }
-  else if($('#footer').hasClass('active') && scrollBottom > 42){
-    $('#footer').removeClass('active');
-  }
-});
+//   var scrollBottom = $('body').height() - $(window).height() - $(window).scrollTop();
+//   console.log(scrollBottom);
+//   if(scrollBottom < 42){
+//     $('#footer').addClass('active');
+//   }
+//   else if($('#footer').hasClass('active') && scrollBottom > 42){
+//     $('#footer').removeClass('active');
+//   }
+// });
 
 
 
