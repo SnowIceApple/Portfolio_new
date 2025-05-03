@@ -174,8 +174,8 @@
         -webkit-transform: translateX(-50%);
     }
 
-    .main_slide_title h2 .gap{
-        padding-top: 15px;
+    .main_slide_title h2 strong{
+        margin-bottom: 12px;
     }
 
     .main_slide_title h2 strong{

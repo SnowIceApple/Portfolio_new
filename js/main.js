@@ -17,6 +17,7 @@ $(document).ready(function(){
         watchOverflow: true,
         speed: 900,
         loop: true,
+        slidesPerView: 1,
 
         navigation: {
           nextEl: '.msc_next',
@@ -190,8 +191,11 @@ $(document).ready(function(){
         $(this).closest('li').removeClass('active');
       }); 
 
+
       $(window).on('scroll', function(){
-        if($(window).scrollTop() > 0){
+        var scrollTpZ = 80;
+
+        if($(window).scrollTop() >= scrollTpZ){
           $('body').addClass('overZero');
         }
         else{
