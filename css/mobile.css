@@ -162,10 +162,6 @@
         padding-top: 480px;
     }
 
-    .main_slide_deco{
-        height: 480px;
-    }
-
     .main_slide_title{
         width: calc(100% - 40px);
         left: 50%;
@@ -338,10 +334,6 @@
 
     .main_slide .swiper-slide{
         padding-top: 430px;
-    }
-
-    .main_slide_deco{
-        height: 430px;
     }
 
     .main_slide_title h2 strong{

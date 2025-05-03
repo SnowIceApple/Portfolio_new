@@ -507,7 +507,7 @@ section{
     color: #000;
     background: #fff;
     line-height: 1.2;
-    letter-spacing: -1px;
+    letter-spacing: -0.5px;
     font-family: 'Inter', sans-serif;
     word-break: break-all;
     transition: all 1s ease;
