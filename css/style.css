@@ -1276,13 +1276,16 @@ section{
 
 .cc_detail_close{
     position: fixed;
-    right: calc((100vw - 1300px) / 2);
+    width: 100vw;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     bottom: 0;
     z-index: 300;
     overscroll-behavior: none;
-    overflow: hidden;
-    margin-right: 8px;
-    box-shadow: 0px 0px 25px rgba(95, 99, 104, 1);
+    pointer-events: none;
 }
 
 .cc_detail_close button{
@@ -1295,6 +1298,8 @@ section{
     background: #0d132d url('../img/close_white.png') center no-repeat;
     background-size: auto 80%;
     will-change: transform;
+    box-shadow: 0px 0px 25px rgba(95, 99, 104, 1);
+    pointer-events: all;
 }
 
 .ccl_floor1 > li.active .cc_detail_close button{
