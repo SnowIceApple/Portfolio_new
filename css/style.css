@@ -412,12 +412,12 @@ section{
     left: 0;
     top: 0;
     width: 100%;
-    height: calc(100% - 80px);
+    height: 100%;
     background: #333;
     z-index: 2;
     animation: mainSlideDeco 0.8s forwards;
     animation-delay: 0.4s;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: ease-out;
     background: #f2f4f9;
     will-change: transform;
     backface-visibility: hidden;
