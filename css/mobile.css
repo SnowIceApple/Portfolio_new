@@ -70,7 +70,7 @@
 
 @media screen and (max-width: 1024px){
     .main_slide .swiper-slide{
-        padding-top: 550px;
+        padding-top: 630px;
     }
     .skill_icon{
         width: 80px;
@@ -159,11 +159,11 @@
     }
 
     .main_slide .swiper-slide{
-        padding-top: 400px;
+        padding-top: 480px;
     }
 
     .main_slide_deco{
-        height: 400px;
+        height: 480px;
     }
 
     .main_slide_title{
@@ -337,11 +337,11 @@
 @media screen and (max-width: 680px){
 
     .main_slide .swiper-slide{
-        padding-top: 350px;
+        padding-top: 430px;
     }
 
     .main_slide_deco{
-        height: 350px;
+        height: 430px;
     }
 
     .main_slide_title h2 strong{
