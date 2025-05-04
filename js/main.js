@@ -18,6 +18,10 @@ $(document).ready(function(){
         speed: 900,
         loop: true,
         slidesPerView: 1,
+        disableOnInteration: false,
+        autoplay: {
+          delay: 6000,
+        },
 
         navigation: {
           nextEl: '.msc_next',
@@ -43,6 +47,7 @@ $(document).ready(function(){
         watchOverflow: true,
         speed: 1300,
         loop: true,
+        disableOnInteration: false,
         // calculateHeight: true,
         touchRatio: 0,
 
@@ -185,7 +190,7 @@ $(document).ready(function(){
       //   });
       // });
 
-      $('.cc_detail_close').on('click', function(){
+      $('.cc_detail_close button').on('click', function(){
         $('body').removeClass('nav_active modal_active');
         $('html').css('overflow', 'visible');
         $(this).closest('li').removeClass('active');

@@ -403,6 +403,7 @@ section{
 }
 
 .main_slide{
+    position: relative;
     width: 100%;
     overflow: hidden;
 }
@@ -484,7 +485,7 @@ section{
 .main_slide_title{
     position: absolute;
     left: 30px;
-    bottom: 50px;
+    bottom: 70px;
     width: calc(55% - 60px);
 }
 
@@ -537,7 +538,7 @@ section{
 .mssb_inner{
     position: relative;
     width: 100%;
-    padding: 40px 25px 30px 25px;
+    padding: 40px 35px;
     box-sizing: border-box;
 }
 
@@ -1286,6 +1287,22 @@ section{
     z-index: 300;
     overscroll-behavior: none;
     pointer-events: none;
+    box-sizing: border-box;
+}
+
+.cc_detail_close::after{
+    display: block;
+    content: "";
+    position: absolute;
+    right: 70px;
+    top: 0;
+    width: 70px;
+    height: 70px;
+    background: #fff url('../img/logo_img.png') center no-repeat;
+    background-size: 54% auto;
+    pointer-events: all;
+    z-index: 2;
+    box-shadow: 0px 0px 25px rgba(95, 99, 104, 0.7);
 }
 
 .cc_detail_close button{
@@ -1320,6 +1337,7 @@ section{
     background: #fff;
     border-top: 30px solid #011131;
     border-bottom: 30px solid #011131;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
 }
 
 .ccl_floor1 > li.active .cc_detail_inner:has(.wide){
@@ -1843,6 +1861,7 @@ section{
     gap: 1px;
     overflow: hidden;
     border-radius: 40px 40px 0 0;
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.1);
 }
 
 .cc_detail_subtit > div{
@@ -1885,15 +1904,9 @@ section{
     user-select: none;
 }
 
-.cds_img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top;
-}
-
-.cds_img.center img{
-    object-position: center;
+.active_effect .cc_detail_subtit .cds_img{
+    background: url('../img/pattern-8798134_640.png') no-repeat center;
+    background-size: cover;
 }
 
 .cc_desc_card{
