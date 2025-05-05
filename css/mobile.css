@@ -198,7 +198,7 @@
     }
     
     .il_floor1{
-        gap: 20px 0;
+        gap: 15px 0;
     }
 
     .il_floor1 > li.type1{
@@ -273,6 +273,11 @@
 
     .overZero .logo a img{
         height: 42px;
+    }
+
+    .overZero .logo a span{
+        font-size: 22px;
+        transition: all .3s ease;
     }
 
     #main{
@@ -443,6 +448,10 @@
     #nav{
         display: none;
     }
+
+    .section_header h2{
+        font-size: 24px;
+    }
     
     #main{
         padding-top: 80px;
@@ -451,6 +460,22 @@
     .cc_detail_tit{
         margin: 20px 0;
     }
+    
+    .il_floor1 > li > a{
+        border-radius: 15px;
+    }
+
+    .il_txt em{
+        font-size: 16px;
+        border-radius: 10px;
+    }
+
+    .il_txt span{
+        display: block;
+        width: 100%;
+        text-align: right;
+    }
+
     .skill_list ul{
         justify-content: flex-start;
         gap: 30px 0;

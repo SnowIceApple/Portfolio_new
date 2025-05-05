@@ -47,6 +47,7 @@ $(document).ready(function(){
         watchOverflow: true,
         speed: 1300,
         loop: true,
+        slidesPerView: 1,
         disableOnInteration: false,
         // calculateHeight: true,
         touchRatio: 0,
