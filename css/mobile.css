@@ -526,8 +526,6 @@
         height: 7px;
     }
 
-
-
     @keyframes mouseMove{
         0%{
             opacity: 1;
@@ -574,6 +572,17 @@
 
     .cdc_overlay{
         display: none;
+    }
+
+    .cc_detail_close button{
+        width: 60px;
+        height: 60px;
+    }
+
+    .cc_detail_close::after{
+        right: 60px;
+        width: 60px;
+        height: 60px;
     }
 
     #footer{
