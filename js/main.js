@@ -49,7 +49,7 @@ $(document).ready(function(){
         loop: true,
         slidesPerView: 1,
         disableOnInteration: false,
-        // calculateHeight: true,
+        autoHeight: true,
         touchRatio: 0,
 
       });
