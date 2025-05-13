@@ -3,7 +3,7 @@ html.fixed{
 }
 
 .progressBar.type2{
-    background: linear-gradient(to right, #877456, #333, #877456);
+    background: linear-gradient(to right, #8f7a5a, #333, #8f7a5a);
 }
 
 #subCC_header{
@@ -111,7 +111,7 @@ html.fixed{
     -webkit-transform: scaleY(0);
     transform-origin: bottom;
     transition: all .3s ease;
-    background: #877456;
+    background: #8f7a5a;
 }
 
 #subCC_nav ul li:hover a::after,
@@ -161,7 +161,7 @@ html.fixed{
 .subCC_mobile_nav_btn a .ico span:nth-child(2){
     top: 50%;
     width: 70%;
-    background: #877456;
+    background: #8f7a5a;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
 }
@@ -261,7 +261,7 @@ html.fixed{
 }
 
 #subCC_mobile_nav ul li.active a em{
-    color: #877456;
+    color: #8f7a5a;
 }
 
 .subCC_mobile_nav_box.active #subCC_mobile_nav ul li a em{
@@ -730,7 +730,7 @@ html.fixed{
     font-weight: 500;
     letter-spacing: -0.5px;
     box-sizing: border-box;
-    background: rgba(135, 116, 86, 1);
+    background: #8f7a5a;
     color: #fff;
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
@@ -922,7 +922,7 @@ html.fixed{
     font-size: 56px;
     font-weight: 700;
     letter-spacing: -0.7px;
-    background: linear-gradient(to right, #877456, #000);
+    background: linear-gradient(to right, #8f7a5a, #000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
