@@ -1304,6 +1304,10 @@ html.fixed{
         font-size: 24px;
     }
 
+    .cc_detail_img{
+        padding-top: 75%;
+    }
+
     #footer.subCC_footer{
         padding-bottom: 0px;
     }
