@@ -252,7 +252,6 @@ html.fixed{
     letter-spacing: -0.5px;
     color: #222;
     transition: all .6s ease;
-    transition-delay: 0s;
     will-change: transform;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
