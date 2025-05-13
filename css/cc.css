@@ -254,6 +254,8 @@ html.fixed{
     transition: all .6s ease;
     transition-delay: 0s;
     will-change: transform;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 #subCC_mobile_nav ul li.active a{
@@ -1237,7 +1239,7 @@ html.fixed{
 
 @media screen and (max-width: 768px){
 
-    .subCC_mobile_nav_box #subCC_mobile_nav ul li a em{
+    #subCC_mobile_nav ul li a em{
         font-size: 28px;
     }
 
@@ -1290,6 +1292,19 @@ html.fixed{
 }
 
 @media screen and (max-width: 568px){
+
+    #subCC_mobile_nav{
+        padding: 30px 20px;
+    }
+
+    #subCC_mobile_nav ul li a{
+        padding: 20px 65px 20px 15px;
+    }
+
+    #subCC_mobile_nav ul li a em{
+        font-size: 24px;
+    }
+
     #footer.subCC_footer{
         padding-bottom: 0px;
     }
