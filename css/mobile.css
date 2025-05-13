@@ -590,8 +590,8 @@
        -webkit-text-size-adjust: none;
     }
 
-    .cc_detail_box{
+    /* .cc_detail_box{
         max-height: 100dvh;
-    }
+    } */
 
 }
