@@ -137,7 +137,7 @@ $(document).ready(function(){
       //   //   if($(this).children().find('.cdc_floor2').height() > 150){
       //   //     $(this).addClass('more');
       //   //   }
-      //   // });
+      //   // }); 
       //   $('.cdc_overlay').each(function(){
       //     var tg = $(this);
       //     var height = tg.siblings('.cc_desc_card').children('li:last-child').height();

@@ -409,7 +409,6 @@
     .cds_txt{
         display: flex;
         flex-wrap: wrap;
-        min-height: 180px;
     }
 
     .cds_txt .txt_box{
