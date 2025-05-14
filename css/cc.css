@@ -442,7 +442,7 @@ html.fixed{
 
 .gallery_container{
     width: 100%;
-    height: 90dvh;
+    max-height: 90dvh;
     overflow: hidden;
     box-sizing: border-box;
 }
@@ -606,7 +606,6 @@ html.fixed{
 .gallery_pic_container{
     position: relative;
     width: 100%;
-    overflow: hidden;
 }
 
 .gp_scroll_down{
@@ -672,7 +671,23 @@ html.fixed{
     display: flex;
     align-items: center;
     justify-content: center;
+    transform: translateY(100px);
+    -webkit-transform: translateY(100px);
+    opacity: 0;
+    animation: galleryPicFadeUp 1.5s linear forwards;
+    animation-delay: 0.5s;
+    animation-timing-function: ease;
+    will-change: opacity, transform;
 }
+
+@keyframes galleryPicFadeUp{
+    to{
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
 
 .gallery_container.wide .gallery_pic{
     overflow: auto;
@@ -963,7 +978,7 @@ html.fixed{
     width: 100%;
     flex-direction: column;
     justify-content: center;
-    gap: 14px 0;
+    gap: 13px 0;
 }
 
 .cds_txt .txt_box h3{
@@ -973,11 +988,11 @@ html.fixed{
     font-size: 56px;
     font-weight: 700;
     letter-spacing: -0.7px;
+    padding: 5px 0;
     background: linear-gradient(to right, #8f7a5a, #000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
-    padding: 5px 0;
 }
 
 .cds_txt .txt_box span{
