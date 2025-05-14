@@ -164,10 +164,63 @@ html.fixed{
     background: #8f7a5a;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
+    transition: all .3s ease;
 }
 
 .subCC_mobile_nav_btn a .ico span:last-child{
     bottom: 0;
+}
+
+.subCC_mobile_nav_btn.active a .ico span:first-child{
+    animation: icoRotate1 0.5s linear forwards;
+    animation-timing-function: ease;
+}
+
+.subCC_mobile_nav_btn.active a .ico span:nth-child(2){
+    transform: translateX(100%) translateY(-50%);
+    -webkit-transform: translateX(100%) translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.subCC_mobile_nav_btn.active a .ico span:last-child{
+    animation: icoRotate2 0.5s linear forwards;
+    animation-timing-function: ease;
+}
+
+
+@keyframes icoRotate1{
+    0%{
+        top: 0;
+    }
+
+    40%{
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+    }
+
+    100%{
+        top: 50%;
+        transform: translateY(-50%) rotate(-45deg);
+        -webkit-transform: translateY(-50%) rotate(-45deg);
+    }
+}
+
+@keyframes icoRotate2{
+    0%{
+        bottom: 0;
+    }
+
+    40%{
+        bottom: 50%;
+        transform: translateY(50%);
+    }
+
+    100%{
+        bottom: 50%;
+        transform: translateY(50%) rotate(45deg);
+    }
 }
 
 .subCC_mobile_nav_box{
@@ -1253,6 +1306,7 @@ html.fixed{
 
     .cc_detail_tit h2{
         font-size: 36px;
+        padding: 10px 0 15px 0;
     }
 
     .cdc_inner{
@@ -1264,15 +1318,15 @@ html.fixed{
     }
 
     .cds_txt .txt_box h3{
-        font-size: 32px;
+        font-size: 34px;
     }
 
     .cds_txt .txt_box span{
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .cdc_inner > strong{
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .cdc_floor2 li p{
