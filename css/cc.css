@@ -606,6 +606,7 @@ html.fixed{
 .gallery_pic_container{
     position: relative;
     width: 100%;
+    overflow: hidden;
 }
 
 .gp_scroll_down{
@@ -953,15 +954,13 @@ html.fixed{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    gap: 1px;
 }
 
 .cc_detail_subtit{
     width: 100%;
+    position: relative;
     display: flex;
     flex-wrap: wrap;
-    overflow: hidden;
 }
 
 .cc_detail_subtit > div{
@@ -969,7 +968,6 @@ html.fixed{
 }
 
 .cds_txt{
-    box-sizing: border-box;
     padding: 80px 0 50px 0;
 }
 
@@ -979,6 +977,12 @@ html.fixed{
     flex-direction: column;
     justify-content: center;
     gap: 13px 0;
+    filter: blur(10px);
+    transition: all 0.7s ease;
+}
+
+.cds_txt.aos-animate  .txt_box{
+    filter: blur(0px);
 }
 
 .cds_txt .txt_box h3{
@@ -1376,7 +1380,7 @@ html.fixed{
     }
 
     .cc_detail_img{
-        padding-top: 75%;
+        padding-top: 80%;
     }
 
     #footer.subCC_footer{
