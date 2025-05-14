@@ -60,9 +60,7 @@ html.fixed{
 
 #subCC_nav{
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
+    right: 0;
     bottom: -20px;
     box-sizing: border-box;
     padding: 0px 25px;
@@ -1227,6 +1225,10 @@ html.fixed{
 
     .subCC_logo{
         left: 20px;
+    }
+
+    #subCC_nav{
+        right: 20px;
     }
 
     .gallery_container{
