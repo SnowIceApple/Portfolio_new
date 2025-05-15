@@ -1037,7 +1037,17 @@ html.fixed{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    transform-origin: top;
+    transition: all .7s ease;
+    will-change: transform;
     /* background: #fafafa; */
+}
+
+.cc_desc_card > li:has(.aos-animate){
+    transform: scale(1);
+    -webkit-transform: scale(1);
 }
 
 .cdc_inner{
