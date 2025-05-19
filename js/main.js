@@ -470,6 +470,90 @@ $(document).ready(function(){
 //   }
 // });
 
+particlesJS('particles-js', {
+"particles": {
+    "number": {
+      "value": 150,
+      "density": {
+        "enabled": true,
+        "value_count": 160
+      }
+    },
+    "line_linked": {
+      "enable": false,
+      "distance": 150,
+      "opacity": 0.4
+    },
+    "size": {
+      "value": 4,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 200,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "opacity":{
+      "value":1,
+      "random":true,
+      "anim": {
+        "enable":true,
+        "speed":1,
+        "opacity_min":0,
+        "sync":false
 
+      }
+    },
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "distance": 140,
+        "mode": "bubble"
+      },
+      "onclick": {
+        "enable": false,
+      },
+      "resize": true
+    },
+    "modes": {
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "bubble":{
+        "distance":250,
+        "size":0,
+        "duration":2,
+        "opacity":0,
+        "speed":3
+      },
+      "push": {
+        "particles_num": 4
+      }
+    }
+  },
+  "retina_detect": true
+});
+
+gsap.registerPlugin(ScrollTrigger);
+
+ScrollTrigger.create({
+    trigger: ".itri_link", 
+    start: "70% bottom",
+    // markers: true,
+    onEnter: itrlLinkEffect,
+});
+
+function itrlLinkEffect(){
+  $('.itri_link').addClass('active');
+  var textWidth = $('.itri_link a span').outerWidth();
+  if($('.itri_link').hasClass('active')){
+    $('.itri_link a').width(textWidth);
+  }
+}
 
 });

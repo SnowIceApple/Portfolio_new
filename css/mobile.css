@@ -329,6 +329,24 @@
         bottom: 15px;
     }
 
+    .itri_inner{
+        padding: 85px 20px;
+    }
+
+    .itri_txt{
+        margin-bottom: 15px;
+    }
+
+    .itri_txt h3{
+        font-size: 32px;
+        line-height: 1.25;
+        word-break: break-all;
+    }
+
+    .itri_link span{
+        font-size: 15px;
+    }
+
 }
 
 @media screen and (max-width: 680px){
