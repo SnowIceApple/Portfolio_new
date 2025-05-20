@@ -542,8 +542,8 @@ particlesJS('particles-js', {
 gsap.registerPlugin(ScrollTrigger);
 
 ScrollTrigger.create({
-    trigger: ".itri_link", 
-    start: "70% bottom",
+    trigger: ".itri_inner", 
+    start: "75% bottom",
     // markers: true,
     onEnter: itrlLinkEffect,
 });
@@ -554,6 +554,17 @@ function itrlLinkEffect(){
   if($('.itri_link').hasClass('active')){
     $('.itri_link a').width(textWidth);
   }
+}
+
+ScrollTrigger.create({
+    trigger: ".itri_txt", 
+    start: "40% bottom",
+    // markers: true,
+    onEnter: itriTxtEffect,
+});
+
+function itriTxtEffect(){
+  $('.itri_txt').addClass('active');
 }
 
 });

@@ -942,7 +942,6 @@ section:not(#main){
     flex-direction: column;
     color: #fff;
     margin-bottom: 30px;
-    line-height: 1.2;
 }
 
 .itri_txt h3{
@@ -953,6 +952,24 @@ section:not(#main){
     word-break: keep-all;
     text-align: center;
     font-weight: 500;
+}
+
+.itri_txt h3 strong{
+    display: inline-block;
+    overflow: hidden;
+}
+
+.itri_txt h3 strong span{
+    display: inline-block;
+    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transition: all .6s;
+    transition-delay: var(--delay);
+}
+
+.itri_txt.active h3 strong span{
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
 }
 
 .itri_txt h3::before{
@@ -968,26 +985,13 @@ section:not(#main){
     background: rgba(0, 0, 0, 0.7);
     filter: blur(7px);
     z-index: -1;
+    opacity: 0;
+    transition: all .7s ease;
+    transition-delay: 0.6s;
 }
 
-.itri_txt span{
-    position: relative;
-    font-size: 20px;
-}
-
-.itri_txt span::before{
-    display: block;
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    width: 110%;
-    height: 110%;
-    background: rgba(0, 0, 0, 0.7);
-    filter: blur(6px);
-    z-index: -1;
+.itri_txt.active h3::before{
+    opacity: 1;
 }
 
 .itri_link{
@@ -1001,12 +1005,32 @@ section:not(#main){
     overflow: hidden;
     width: 48px;
     height: 48px;
-    transition: width 0.5s ease;
+    transition: width 0.5s 0.5s ease, background-color 0.3s 0s ease;
+    transform: scale(0);
+    -webkit-transform: scale(0);
     background: #757575;
+    backdrop-filter: blur(3px);
+}
+
+.itri_link.active a{
+    animation: itriLinkScale linear forwards 0.5s;
+    animation-timing-function: ease;
 }
 
 @keyframes itriLinkScale{
+    30%{
+        transform: scale(0);
+        -webkit-transform: scale(0);
+    }
 
+    100%{
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+}
+
+.itri_link a:hover{
+    background: rgba(255, 202, 40, 0.6);
 }
 
 .itri_link a span{
@@ -1021,16 +1045,14 @@ section:not(#main){
     background: url('../img/open_link_wh40.png') no-repeat;
     background-size: 25px;
     background-position: right 20px center;
-
 }
 
 .itri_link.active a span{
     opacity: 1;
     visibility: visible;
-    transition: all .6s ease;
-    transition-delay: 0.5s;
+    transition: all .8s ease;
+    transition-delay: 1s;
 }
-
 
 .il_txt{
     width: 100%;
