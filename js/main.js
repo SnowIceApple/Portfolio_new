@@ -543,8 +543,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 ScrollTrigger.create({
     trigger: ".itri_inner", 
-    start: "75% bottom",
-    // markers: true,
+    start: "50% bottom",
+    markers: true,
     onEnter: itrlLinkEffect,
 });
 
