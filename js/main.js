@@ -470,81 +470,13 @@ $(document).ready(function(){
 //   }
 // });
 
-particlesJS('particles-js', {
-"particles": {
-    "number": {
-      "value": 150,
-      "density": {
-        "enabled": true,
-        "value_count": 160
-      }
-    },
-    "line_linked": {
-      "enable": false,
-      "distance": 150,
-      "opacity": 0.4
-    },
-    "size": {
-      "value": 4,
-      "random": true,
-      "anim": {
-        "enable": false,
-        "speed": 200,
-        "size_min": 0.1,
-        "sync": false
-      }
-    },
-    "opacity":{
-      "value":1,
-      "random":true,
-      "anim": {
-        "enable":true,
-        "speed":1,
-        "opacity_min":0,
-        "sync":false
-
-      }
-    },
-  },
-  "interactivity": {
-    "detect_on": "canvas",
-    "events": {
-      "onhover": {
-        "enable": true,
-        "distance": 140,
-        "mode": "bubble"
-      },
-      "onclick": {
-        "enable": false,
-      },
-      "resize": true
-    },
-    "modes": {
-      "repulse": {
-        "distance": 200,
-        "duration": 0.4
-      },
-      "bubble":{
-        "distance":250,
-        "size":0,
-        "duration":2,
-        "opacity":0,
-        "speed":3
-      },
-      "push": {
-        "particles_num": 4
-      }
-    }
-  },
-  "retina_detect": true
-});
 
 gsap.registerPlugin(ScrollTrigger);
 
 ScrollTrigger.create({
     trigger: ".itri_inner", 
     start: "50% bottom",
-    markers: true,
+    // markers: true,
     onEnter: itrlLinkEffect,
 });
 
@@ -566,5 +498,53 @@ ScrollTrigger.create({
 function itriTxtEffect(){
   $('.itri_txt').addClass('active');
 }
+
+var workList = document.querySelectorAll('.wl_img');
+
+workList.forEach((list) => {
+  var workListImg = list.querySelectorAll('.wl_img img');
+  let tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: list,
+      // markers: true,
+      toggleActions: "restart none none reset"
+    }
+  });
+  tl.from(list, {
+      duration: 2.5,
+      xPercent: -70,
+      scale: 0.8,
+      ease: "power2.out",
+    }
+  );
+  tl.from(workListImg, {
+      duration: 2.5,
+      scale: 1.3,
+      delay: -2.5,
+      ease: "power2.out",
+    }
+  )
+});
+
+
+var workTxt = document.querySelectorAll('.wl_desc');
+
+workTxt.forEach((worktxt) => {
+  var workTxtEm = worktxt.querySelectorAll('em');
+  let tl2 = gsap.timeline({
+    scrollTrigger: {
+        trigger: worktxt,
+        // markers: true,
+        toggleActions: "restart none none reset"
+    }
+  });
+  tl2.to(workTxtEm, {
+      duration: 1.5,
+      backgroundPosition: "0% 0%",
+      ease: "power2.out",
+    }
+  )
+});
+
 
 });

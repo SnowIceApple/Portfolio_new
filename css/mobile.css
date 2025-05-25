@@ -26,10 +26,6 @@
         width: calc(50% - 15px);
     }
 
-    .wl_img{
-        height: 320px;
-    }
-
     .clone_coding_list{
         padding-top: 0px;
     }
@@ -384,7 +380,7 @@
     }
 
     .wl_desc em{
-        font-size: 18px;
+        font-size: 22px;
     }
 
     .ccl_floor1 > li{
@@ -516,10 +512,6 @@
 
     .skill_icon_img img{
         width: 32px;
-    }
-
-    .wl_img{
-        height: 280px;
     }
 
     .ccsn_mouse{
