@@ -1101,7 +1101,7 @@ section:not(#main){
     width: calc((100% / 6) - 16.6666px);
     padding: 45px 0;
     border-radius: 15px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
     transition: all .3s;
 }
 
