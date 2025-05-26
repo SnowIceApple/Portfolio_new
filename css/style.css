@@ -1094,21 +1094,22 @@ section:not(#main){
 .skill_list ul{
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 1px;
+    background: #000;
+    box-sizing: border-box;
+    padding: 1px;
 }
 
-.skill_list ul li{
-    width: calc((100% / 6) - 16.6666px);
+.skill_list ul li{ 
+    flex: 1;
     padding: 45px 0;
-    border-radius: 15px;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
-    transition: all .3s;
+    transition: all .3s ease;
+    background: #fff;
 }
 
 .skill_list ul li:hover{
     box-shadow: 0 5px 10px transparent;
-    background: #4A44F2;
-    border-radius: 5px;
+    background: #0540F2;
 }
 
 .skill_icon{
@@ -1118,7 +1119,7 @@ section:not(#main){
     justify-content: center;
     width: 90px;
     height: 90px;
-    /* background: #f2f4f9; */
+    border: 1px solid #eee;
     border-radius: 50%;
     margin: 0 auto;
     user-select: none;
@@ -1135,7 +1136,7 @@ section:not(#main){
     margin-top: 20px;
     display: block;
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
     letter-spacing: -1px;
     color: #111;

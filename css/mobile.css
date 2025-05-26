@@ -75,7 +75,8 @@
     }
 
     .skill_list ul li{
-        width: calc(33.3333% - 13.3333px);
+        flex: none;
+        width: calc(33.3333% - 0.6666px);
     }
 
 
@@ -502,7 +503,7 @@
     }
 
     .skill_list ul li{
-        width: calc(50% - 10px);
+        width: calc(50% - 0.5px);
     }
 
     .skill_icon{
