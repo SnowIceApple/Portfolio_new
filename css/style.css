@@ -1094,11 +1094,21 @@ section:not(#main){
 .skill_list ul{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 0 50px;
+    gap: 20px;
 }
 
 .skill_list ul li{
+    width: calc((100% / 6) - 16.6666px);
+    padding: 45px 0;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: all .3s;
+}
+
+.skill_list ul li:hover{
+    box-shadow: 0 5px 10px transparent;
+    background: #4A44F2;
+    border-radius: 5px;
 }
 
 .skill_icon{
@@ -1106,42 +1116,33 @@ section:not(#main){
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     /* background: #f2f4f9; */
     border-radius: 50%;
     margin: 0 auto;
     user-select: none;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.09);
+    background: #fff;
 }
 
 .skill_icon_img img{
-    width: 45px;
+    width: 47px;
     opacity: 0.7;
 }
 
 .skill_list ul li em{
     position: relative;
-    margin-top: 25px;
+    margin-top: 20px;
     display: block;
     text-align: center;
-    font-size: 19px;
-    font-weight: 400;
+    font-size: 22px;
+    font-weight: 600;
     letter-spacing: -1px;
     color: #111;
 }
 
-.skill_list ul li em::before{
-    display: block;
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: -11.5px;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    width: 16px;
-    height: 2px;
-    background: #000;
+.skill_list ul li:hover em{
+    color: #fff;
 }
 
 /* works */
