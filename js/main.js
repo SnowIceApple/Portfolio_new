@@ -559,7 +559,8 @@ sloganList.forEach((sList) => {
       toggleActions: "play none none reverse",
       scrub: 3,
       // markers: true,
-    }
+    },
+    
   });
 
   tl3.to(sTxt1, {
@@ -581,5 +582,6 @@ sloganList.forEach((sList) => {
   });
 });
 
-window.addEventListener("resize", ScrollTrigger.update);
+
+
 });
