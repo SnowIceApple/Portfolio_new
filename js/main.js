@@ -581,5 +581,5 @@ sloganList.forEach((sList) => {
   });
 });
 
-
+window.addEventListener("resize", ScrollTrigger.update);
 });
