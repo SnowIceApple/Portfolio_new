@@ -546,5 +546,40 @@ workTxt.forEach((worktxt) => {
   )
 });
 
+var sloganList = document.querySelectorAll('.sl_floor1 > li');
+
+sloganList.forEach((sList) => {
+  var sTxt1 = sList.querySelectorAll('.dir_ltr1');
+  var sTxt2 = sList.querySelectorAll('.dir_rtl');
+  var sTxt3 = sList.querySelectorAll('.dir_ltr2');
+  let tl3 = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".slogans",
+      start: "10% bottom",
+      toggleActions: "play none none reverse",
+      scrub: 3,
+      // markers: true,
+    }
+  });
+
+  tl3.to(sTxt1, {
+    duration: 5,
+    xPercent: -40,
+    ease: "power2.out",
+    })
+  .to(sTxt2, {
+    duration: 5,
+    delay: -5,
+    xPercent: 80,
+    ease: "power2.out",
+  })
+  .to(sTxt3, {
+  duration: 5,
+  delay: -5,
+  xPercent: -60,
+  ease: "power2.out",
+  });
+});
+
 
 });
