@@ -512,13 +512,14 @@ workList.forEach((list) => {
   });
   tl.from(list, {
       duration: 2.5,
-      xPercent: -70,
+      xPercent: -100,
       scale: 0.8,
       ease: "power2.out",
     }
   );
   tl.from(workListImg, {
-      duration: 2.5,
+      duration: 2.5, 
+      XPercent: 100,
       scale: 1.3,
       delay: -2.5,
       ease: "power2.out",
@@ -602,5 +603,6 @@ sectionHeader.forEach((scHeader) => {
     stagger: { amount: 0.1 },
   });
 });
+
 
 });
