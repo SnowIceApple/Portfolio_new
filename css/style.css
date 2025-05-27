@@ -1112,8 +1112,8 @@ section:not(#main){
     background: #fff;
 }
 
+.skill_list ul li.active,
 .skill_list ul li:hover{
-    box-shadow: 0 5px 10px transparent;
     background: #0554F2;
 }
 
@@ -1147,10 +1147,11 @@ section:not(#main){
     background: #F2E41B;
     border-radius: 50%;
     z-index: -1;
-    transition: all .3s ease;
+    transition: all .4s ease;
     transform-origin: center;
 }
 
+.skill_list ul li.active .skill_icon::after,
 .skill_list ul li:hover .skill_icon::after{
     transform: translate(-50%, -50%) scale(1.2);
     -webkit-transform: translate(-50%, -50%) scale(1.2);
@@ -1173,6 +1174,7 @@ section:not(#main){
     color: #111;
 }
 
+.skill_list ul li.active em,
 .skill_list ul li:hover em{
     color: #fff;
 }

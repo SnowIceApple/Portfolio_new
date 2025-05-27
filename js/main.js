@@ -604,5 +604,21 @@ sectionHeader.forEach((scHeader) => {
   });
 });
 
+var skillIdx = 0;
+var skillList = $('.skill_list ul li');
+
+function skillListAni(){
+  setInterval(() => {
+    skillIdx ++;
+    if(skillIdx >= skillList.length){
+      skillIdx = 0;
+    }
+    skillList.eq(skillIdx).addClass('active').siblings().removeClass('active');
+  }, 3500);
+}
+
+skillListAni();
+
+  console.log(skillIdx);
 
 });
