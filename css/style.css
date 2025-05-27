@@ -1151,8 +1151,7 @@ section:not(#main){
     transform-origin: center;
 }
 
-.skill_list ul li.active .skill_icon::after,
-.skill_list ul li:hover .skill_icon::after{
+.skill_list ul li.active .skill_icon::after{
     transform: translate(-50%, -50%) scale(1.2);
     -webkit-transform: translate(-50%, -50%) scale(1.2);
 }
@@ -1174,8 +1173,7 @@ section:not(#main){
     color: #111;
 }
 
-.skill_list ul li.active em,
-.skill_list ul li:hover em{
+.skill_list ul li.active em{
     color: #fff;
 }
 
