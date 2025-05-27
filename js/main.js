@@ -582,6 +582,25 @@ sloganList.forEach((sList) => {
   });
 });
 
+var sectionHeader = document.querySelectorAll('.section_header');
 
+sectionHeader.forEach((scHeader) => {
+  var scHeaderTxt = scHeader.querySelectorAll('h2');
+  var shSpTxt = new SplitType(scHeaderTxt, { types: 'chars' });
+  let tl4 = gsap.timeline({
+    scrollTrigger: {
+      trigger: scHeader,
+      start: "50% bottom",
+      toggleActions: "play none none reverse",
+      markers: true,
+    },
+  });
+  tl4.from(shSpTxt.chars, {
+    opacity: 0,
+    y: 30,
+    duration: 0.5,
+    stagger: { amount: 0.1 },
+  });
+});
 
 });
