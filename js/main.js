@@ -608,11 +608,7 @@ var skillIdx = 0;
 var skillList = $('.skill_list ul li');
 
 function skillListAni(){
-  $('.skill_list ul li').on('mouseenter', function(){
-    var idx = $(this).index();
-    skillIdx = idx;
-    $(this).addClass('active').siblings().removeClass('active');
-  });
+
   setInterval(() => {
     skillIdx ++;
     if(skillIdx >= skillList.length){
@@ -620,6 +616,12 @@ function skillListAni(){
     }
     skillList.eq(skillIdx).addClass('active').siblings().removeClass('active');
   }, 3500);
+
+    $('.skill_list ul li').on('mouseenter', function(){
+      var idx = $(this).index();
+      skillIdx = idx;
+      $(this).addClass('active').siblings().removeClass('active');
+    });
 }
 
 skillListAni();

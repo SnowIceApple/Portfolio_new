@@ -1112,8 +1112,7 @@ section:not(#main){
     background: #fff;
 }
 
-.skill_list ul li.active,
-.skill_list ul li:hover{
+.skill_list ul li.active{
     background: #0554F2;
 }
 
