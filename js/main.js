@@ -619,6 +619,5 @@ function skillListAni(){
 
 skillListAni();
 
-  console.log(skillIdx);
 
 });
