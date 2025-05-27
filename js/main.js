@@ -592,7 +592,7 @@ sectionHeader.forEach((scHeader) => {
       trigger: scHeader,
       start: "50% bottom",
       toggleActions: "play none none reverse",
-      markers: true,
+      // markers: true,
     },
   });
   tl4.from(shSpTxt.chars, {
