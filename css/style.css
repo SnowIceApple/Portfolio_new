@@ -740,7 +740,7 @@ section:not(#main){
     color: #000;
     width: 100%;
     transition: all .3s ease;
-    background-image: linear-gradient( 109.6deg,  rgba(61,245,167,1) 11.2%, rgba(9,111,224,1) 91.1% );
+    background-image: linear-gradient( 69.2deg,  rgba(77,143,251,1) 35.3%, rgba(202,51,255,1) 100.3% );
     border-radius: 999px;
 }
 
@@ -1090,6 +1090,7 @@ section:not(#main){
 }
 
 .skill_list{
+    position: relative;
     width: 100%;
 }
 
@@ -1097,7 +1098,7 @@ section:not(#main){
     display: flex;
     flex-wrap: wrap;
     gap: 1px;
-    background: linear-gradient(45deg, #0554F2, #444);
+    background-image: linear-gradient( 69.2deg,  rgba(77,143,251,1) 35.3%, rgba(202,51,255,1) 100.3% );
     box-sizing: border-box;
     padding: 1px;
 }
