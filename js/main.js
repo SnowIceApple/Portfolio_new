@@ -323,9 +323,11 @@ $(document).ready(function(){
                         top: - scrollTop + 'px',
                     });
                       $('body').addClass('mNav_active');
-                      $('.mNav_box').css({
-                        top: - 100 + '%',
-                      });
+                        setTimeout(() => {
+                        $('.mNav_box').css({
+                          top: - 100 + '%',
+                        });
+                      }, 50);
                     }
                     else{
                       var scrollTop2 = parseInt($('#content_box').css('top')) * -1;
@@ -408,9 +410,11 @@ $(document).ready(function(){
           top: - scrollTop + 'px',
       });
       $('body').addClass('mNav_active');
-      $('.mNav_box').css({
-        top: - 100 + '%',
-      });
+      setTimeout(() => {
+        $('.mNav_box').css({
+          top: - 100 + '%',
+        });
+      }, 50);
       }
       else{
         var scrollTop2 = parseInt($('#content_box').css('top')) * -1;
