@@ -384,9 +384,7 @@ $(document).ready(function(){
     });
 
     $('.mobile_nav_btn').on('click', function(){
-      var winHeight = window.document.documentElement.clientHeight;
-      window.scrollBy(0, 100);
-      window.scrollBy(0, -100);
+      var winHeight = window.visualViewport.height;
       if($(this).hasClass('mNav_slideDown')){
         pagePos = winHeight;
         $('.mNav_box').css({
