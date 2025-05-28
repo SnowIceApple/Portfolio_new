@@ -259,7 +259,7 @@ $(document).ready(function(){
     $('.mobile_nav_btn').each(function(){
 
         $(this).on('touchstart', function(e){
-          var winHeight = window.document.documentElement.clientHeight;
+          var winHeight = window.visualViewport.height;
 
             startPos = pagePos;
     
