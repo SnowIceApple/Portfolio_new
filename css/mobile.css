@@ -309,7 +309,6 @@
     }
 
     .ccl_floor1 > li > a{
-        padding: 16px 16px 85px 16px;
     }
 
     .ccl_img{
@@ -401,7 +400,7 @@
     }
 
     .ccl_desc em{
-        font-size: 18px;
+        font-size: 20px;
     }
     
     .cc_detail_tit h2{
