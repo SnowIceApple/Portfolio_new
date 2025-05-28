@@ -249,7 +249,6 @@ $(document).ready(function(){
     var scrollY = 0;
     var standPos = 0;
     var scrollPrevented = false;
-    var winHeight = window.document.documentElement.clientHeight;
 
     $(window).on('scroll', function(){
       var scrollTop = $(window).scrollTop();
@@ -281,9 +280,6 @@ $(document).ready(function(){
                     });
                 }
 
-    
-                // console.log(startPos);
-                // console.log(pagePos);
     
                 $('.mNav_box').css({
                     top: - pagePos + 'px',
@@ -319,8 +315,6 @@ $(document).ready(function(){
                       top: - pagePos + 'px',
                     }); 
 
-                    // window.scrollBy(0, 100);
-                    // window.scrollBy(0, -100);
 
                     if($(this).hasClass('mNav_slideUp')){
                       var scrollTop = $(window).scrollTop();
