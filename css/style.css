@@ -315,6 +315,7 @@ section:not(#main){
     height: 55px;
     display: flex;
     align-items: center;
+    justify-content: center;
     box-sizing: border-box;
     padding: 0 20px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -324,9 +325,11 @@ section:not(#main){
 .mNav_title h2{
     position: relative;
     font-size: 24px;
-    color: #000;
+    background: linear-gradient( 109.6deg,  rgba(166,64,221,1) 21.2%, rgba(102,165,235,1) 74.4% );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
     letter-spacing: -0.5px;
-    font-weight: 200;
+    font-weight: 800;
     text-transform: uppercase;
     transform: translateX(-20px);
     -webkit-transform: translateX(-20px);
