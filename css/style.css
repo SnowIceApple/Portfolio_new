@@ -12,6 +12,41 @@ body{
     font-family: 'Inter', 'Pretendard', sans-serif;
 }
 
+/* view_transition */
+
+@view-transition{
+    navigation: auto;
+}
+
+.revealTransitionBg{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: #fff;
+    mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 0) 50%, #000 50.1%);
+    -webkit-mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 0) 50%, #000 50.1%);
+    mask-size: 0% 0%;
+    -webkit-mask-size: 0% 0%;
+    view-transition-name: revealTransitionBg;
+    pointer-events: none;
+}
+
+::view-transition(.revealTransitionBg){
+    animation: revealRadial 0.7s both;
+}
+
+@keyframes revealRadial{
+    100%{
+        mask-size: 300% 300%;
+        -webkit-mask-size: 300% 300%;
+        visibility: hidden;
+    }
+}
+
+
 #wrap{
     width: 100%;
     height: 100%;

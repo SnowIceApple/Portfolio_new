@@ -2,6 +2,9 @@ html.fixed{
     overflow: hidden;
 }
 
+/* view_transition */
+
+
 .progressBar.type2{
     background: linear-gradient(to right, #8f7a5a, #333, #8f7a5a);
 }
@@ -1251,6 +1254,8 @@ html.fixed{
     color: #000;
     font-weight: 500;
 }
+
+
 
 /* media query */
 
