@@ -2,39 +2,6 @@ html.fixed{
     overflow: hidden;
 }
 
-.cc_body{
-    overflow: hidden;
-    max-height: 100%;
-    mask-image: url('../img/Ellipse_mask.svg');
-    -webkit-mask-image: url('../img/Ellipse_mask.svg');
-    mask-repeat: no-repeat;
-    -webkit-mask-repeat: no-repeat;
-    mask-position: center;
-    -webkit-mask-position: center;
-    mask-size: 0 0;
-    -webkit-mask-size: 0 0;
-    animation: revealMask 1.5s ease forwards, endMask 0.001s 1.5s forwards;
-}
-
-@keyframes revealMask{
-    100%{
-        mask-size: 250% 250%;
-        -webkit-mask-size: 250% 250%;
-    }
-}
-
-@keyframes endMask{
-    100%{
-        overflow: visible;
-        max-height: none;
-    }
-}
-
-
-.cc_body #wrap{
-
-}
-
 
 /* view_transition */
 
