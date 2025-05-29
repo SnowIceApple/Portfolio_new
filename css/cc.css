@@ -23,7 +23,7 @@ html.fixed{
     -webkit-mask-repeat: no-repeat;
     pointer-events: none;
     animation: revealMask 1s linear forwards;
-    will-change: mask-size;
+    will-change: mask-size, visibility;
 }
 
 @keyframes revealMask{
