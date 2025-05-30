@@ -1471,16 +1471,16 @@ section:not(#main){
     color: #fff;
     border-radius: 999px;
     box-sizing: border-box;
-    background: linear-gradient( 109.6deg,  rgba(166,64,221,1) 21.2%, rgba(102,165,235,1) 74.4% );
 }
-/* 
+
 .ccl_desc span.cate.color1{
-    background: #02427a;
+    background: linear-gradient( 109.6deg,  rgba(166,64,221,1) 21.2%, rgba(102,165,235,1) 74.4% );
 }
 
 .ccl_desc span.cate.color2{
-    background: #0164bc;
-} */
+    background: linear-gradient( 109.6deg,  rgba(247,237,7,1) 11.2%, rgba(0,168,219,1) 100.2% );
+}
+
 
 .ccl_desc em{
     display: block;
