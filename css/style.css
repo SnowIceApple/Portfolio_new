@@ -1436,6 +1436,10 @@ section:not(#main){
     transform-origin: top;
 }
 
+.ccl_img.type2 img{
+    object-position: left;
+}
+
 .ccl_floor1 > li > a:hover .ccl_img img{
     transform: scale(1.15);
     -webkit-transform: scale(1.15);
