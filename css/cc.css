@@ -483,9 +483,12 @@ html.fixed{
 
 .gallery_container{
     width: 100%;
-    max-height: 90dvh;
     overflow: hidden;
     box-sizing: border-box;
+}
+
+.cc_detail_img.type1 .gallery_container{
+    max-height: 90dvh;
 }
 
 /* .gallery_container::after{
