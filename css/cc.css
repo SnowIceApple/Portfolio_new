@@ -477,6 +477,10 @@ html.fixed{
     box-sizing: border-box;
 }
 
+.cc_detail_img.type2{
+
+}
+
 .gallery_container{
     width: 100%;
     max-height: 90dvh;
@@ -1300,7 +1304,7 @@ html.fixed{
         right: 20px;
     }
 
-    .gallery_container{
+    .cc_detail_img.type1 .gallery_container{
         height: 540px;
     }
 
@@ -1339,11 +1343,11 @@ html.fixed{
         padding: 70px 20px;
     }
 
-    .cc_detail_img{
+    .cc_detail_img.type1{
         padding-top: 60.88%;
     }
 
-    .gallery_container{
+    .cc_detail_img.type1 .gallery_container{
         position: absolute;
         left: 0;
         top: 0;
@@ -1429,7 +1433,7 @@ html.fixed{
         font-size: 24px;
     }
 
-    .cc_detail_img{
+    .cc_detail_img.type1{
         padding-top: 80%;
     }
 
