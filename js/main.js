@@ -514,7 +514,7 @@ workList.forEach((list) => {
   });
   tl.from(list, {
       duration: 2.5,
-      xPercent: -100,
+      xPercent: -30,
       scale: 0.8,
       ease: "power2.out",
     }
