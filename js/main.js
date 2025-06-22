@@ -513,18 +513,19 @@ workList.forEach((list) => {
     }
   });
   tl.from(list, {
-      duration: 2.5,
+      duration: 1.5,
       xPercent: -30,
       scale: 0.8,
       ease: "power2.out",
     }
   );
   tl.from(workListImg, {
-      duration: 2.5, 
+      duration: 1.5, 
       XPercent: 100,
       scale: 1.3,
-      delay: -2.5,
+      delay: -1.5,
       ease: "power2.out",
+      opacity: 0.5,
     }
   )
 });
