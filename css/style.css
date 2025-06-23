@@ -1492,11 +1492,11 @@ section:not(#main){
 .ccl_desc em{
     display: block;
     width: max-content;
-    font-size: 26px;
-    font-weight: 800;
+    font-size: 24px;
+    font-weight: 600;
     letter-spacing: -0.3px;
     line-height: 1.2;
-    color: #000;
+    color: #222;
 }
 
 /* go_top */
