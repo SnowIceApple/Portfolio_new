@@ -3,6 +3,7 @@ html{
     height: 100%;
     overflow-x: hidden;
     overflow-y: scroll;
+    font-size: 1.756vh;
 }
 
 body{
@@ -13,7 +14,6 @@ body{
 }
 
 /* view_transition */
-
 
 #wrap{
     width: 100%;
