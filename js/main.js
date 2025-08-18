@@ -14,6 +14,7 @@ $(document).ready(function(){
     const swiper1 = new Swiper('.main_slide', {
         // Optional parameters
         direction: 'horizontal',
+        effect: 'fade',
         watchOverflow: true,
         speed: 900,
         loop: true,
@@ -525,7 +526,6 @@ workList.forEach((list) => {
       scale: 1.3,
       delay: -1.5,
       ease: "power2.out",
-      opacity: 0.5,
     }
   )
 });
