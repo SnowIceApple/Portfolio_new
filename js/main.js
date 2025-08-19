@@ -383,6 +383,23 @@ $(document).ready(function(){
       
     });
 
+    $(window).on('resize', function(){
+      if($(window).innerWidth() > 568){
+              pagePos = 65;
+      $('.mNav_box').css({
+        top: - pagePos + 'px',
+      });
+
+      $('.mobile_nav_btn').removeClass('mNav_slideUp');
+      $('.mobile_nav_btn').addClass('mNav_slideDown');
+      $('body').removeClass('mNav_active');
+      $('#content_box').css({
+        position: 'relative',
+        top: 0,
+      });
+      }
+    });
+
     $('.mobile_nav_btn').on('click', function(){
       var winHeight = window.visualViewport.height;
       if($(this).hasClass('mNav_slideDown')){
