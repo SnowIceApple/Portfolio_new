@@ -272,7 +272,7 @@
     }
 
     .overZero .logo a span{
-        font-size: 22px;
+        font-size: 32px;
         transition: all .3s ease;
     }
 
@@ -347,6 +347,10 @@
 
     .itri_link span{
         font-size: 15px;
+    }
+
+    .wl_desc em{
+        font-size: 22px;
     }
 
 }
