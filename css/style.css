@@ -150,7 +150,6 @@ section:not(#main){
     height: 100%;
     padding: 6px 22px;
     box-sizing: border-box;
-    transition: all .2s;
 }
 
 #nav ul li a span{
@@ -160,6 +159,12 @@ section:not(#main){
     letter-spacing: -0.5px;
     font-size: 18px;
     line-height: 1.2;
+    transition: all .3s ease;
+}
+
+#nav ul li a:hover span,
+#nav ul li a:focus span{
+    color: #0511F2;
 }
 /* 
 #nav ul li a span::after{
@@ -302,9 +307,12 @@ section:not(#main){
     position: absolute;
     left: 0;
     top: -55px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     width: 100%;
+    height: 100%; 
     transition: all .45s;
-    height: 100%;
 }
 
 .mNav_box:has(.mNav_slideUp) .mNav_link_position{
@@ -313,6 +321,7 @@ section:not(#main){
 
 .mNav_title{
     width: 100%;
+    height: max-content;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -347,9 +356,10 @@ section:not(#main){
 
 #mobile_nav{
     width: 100%;
+    flex: 1;
     overflow: auto;
     box-sizing: border-box;
-    padding: 0 20px;
+    padding: 0 20px 100px 20px;
 }
 
 .mNav_box:has(.mNav_slideUp) #mobile_nav{
@@ -382,6 +392,26 @@ section:not(#main){
     border-bottom: 1px solid #d0d0d0;
 }
 
+.mNav_logo{
+    position: absolute;
+    left: 50%;
+    bottom: 22px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    opacity: 0;
+    transition: all .6s ease;
+}
+
+.mNav_active .mNav_logo{
+    opacity: 1;
+    transition-delay: 1.25s;
+}
+
+.mNav_logo strong{
+    font-size: 42px;
+    font-family: "Ephesis", cursive;
+    letter-spacing: -0.5px;
+}
 
 /* content_box */
 
@@ -1199,11 +1229,11 @@ section:not(#main){
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 40px;
 }
 
 .wl_floor1 > li{
-    width: calc(50% - 10px);
+    width: calc(50% - 20px);
     box-sizing: border-box;
 }
 
@@ -1247,7 +1277,6 @@ section:not(#main){
 
 .wl_desc{
     width: 100%;
-    box-sizing: border-box;
     padding: 26px 0px 20px 0px;
     box-sizing: border-box;
 }
@@ -1414,7 +1443,7 @@ section:not(#main){
     background-size: 50% !important;
     border-radius: 50%;
     transition: all .3s ease;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .ccl_floor1 > li > a:hover::after{
@@ -1435,7 +1464,7 @@ section:not(#main){
     height: 100%;
     object-fit: cover;
     object-position: top;
-    transition: all .4s ease;
+    transition: all .5s ease;
     transform-origin: center;
 }
 
@@ -1443,7 +1472,7 @@ section:not(#main){
     object-position: left;
 }
 
-.ccl_floor1 > li > a:hover .ccl_img img{
+.ccl_floor1 > li:hover .ccl_img img{
     transform: scale(1.15);
     -webkit-transform: scale(1.15);
 }
@@ -1456,7 +1485,7 @@ section:not(#main){
     flex-wrap: wrap;
     flex-direction: column;
     transition: all .3s ease;
-    border-bottom: 1px solid #f2f4f9;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.13);
 }
 
 /* .ccl_floor1 > li > a:hover .ccl_desc,
@@ -1501,6 +1530,66 @@ section:not(#main){
     letter-spacing: -0.3px;
     line-height: 1.2;
     color: #222;
+}
+
+.ccl_link{
+    width: 100%;
+    padding: 15px 0;
+}
+
+.ccl_link ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ccl_link ul li{
+    position: relative;
+    width: 100%;
+}
+
+.ccl_link ul li a{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 0;
+}
+
+.ccl_link ul li a .deco{
+    position: relative;
+    flex: 1;
+    height: 1px;
+    background: #666;
+}
+
+.ccl_link ul li a .deco::after{
+    display: block;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 7px;
+    height: 7px;
+    background: #000;
+    border-radius: 50%;
+    transition: all .3s ease;
+}
+
+.ccl_link ul li a .ld{
+    display: block;
+    font-size: 16px;
+    letter-spacing: -0.3px;
+    padding-left: 15px;
+    color: #222;
+    font-weight: 300;
+    transition: all .3s ease;
+}
+
+.ccl_link ul li a:hover .ld,
+.ccl_link ul li a:focus .ld{
+    color: #0511f2;
 }
 
 /* go_top */
