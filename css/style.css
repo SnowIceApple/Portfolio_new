@@ -1461,7 +1461,7 @@ section:not(#main){
     flex-wrap: wrap;
     flex-direction: column;
     transition: all .3s ease;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
 }
 
 /* .ccl_floor1 > li > a:hover .ccl_desc,
