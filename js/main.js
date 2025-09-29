@@ -19,9 +19,9 @@ $(document).ready(function(){
         speed: 900,
         loop: true,
         slidesPerView: 1,
-        disableOnInteration: false,
         autoplay: {
           delay: 6000,
+          disableOnInteration: false,
         },
 
         navigation: {
