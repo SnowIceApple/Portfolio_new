@@ -205,7 +205,7 @@ section:not(#main){
     height: 100%;
     flex-wrap: wrap;
     justify-content: center;
-    z-index: 300;
+    z-index: 199;
 }
 
 .mNav_box{
