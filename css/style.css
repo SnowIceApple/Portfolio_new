@@ -164,7 +164,7 @@ section:not(#main){
 
 #nav ul li a:hover span,
 #nav ul li a:focus span{
-    color: #0511F2;
+    color: #0554F2;
 }
 /* 
 #nav ul li a span::after{
@@ -1550,7 +1550,7 @@ section:not(#main){
 }
 
 .ccl_link ul li:nth-child(2) a{
-    background: #000DFF;
+    background: #0554F2;
 }
 
 .ccl_link ul li:nth-child(2) a:hover ,
