@@ -3,7 +3,7 @@
     }
 }
 
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 1440px){
     #nav{
         right: 20px;
     }
@@ -18,7 +18,7 @@
 
     section:not(#main) .container{
         box-sizing: border-box;
-        padding: 0 20px;
+        padding: 0 15px;
     }
 
     .wl_floor1{
@@ -29,12 +29,21 @@
         width: calc(50% - 15px);
     }
 
+    .skill_icon_img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .skill_icon_img img{
+        width: 35px;
+    }
+
     .clone_coding_list{
         padding-top: 0px;
     }
 
     .ccl_floor1 > li{
-        width: calc(50% - 15px);
+        width: calc(50% - 20px);
     }
 
     .cc_detail_tit{
@@ -72,17 +81,14 @@
         padding-top: 630px;
     }
 
-    .skill_icon{
-        width: 80px;
-        height: 80px;
+    .skill_list ul{
+        box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.04);
     }
 
     .skill_list ul li{
-        flex: none;
-        width: calc(33.3333% - 0.6666px);
-        padding: 45px 0;
+        width: 33.3333%;
+        box-shadow: none;
     }
-
 
     .skill_list ul li em{
         font-size: 18px;
@@ -262,6 +268,10 @@
         transform: translate(-50%, -50%);
     }
 
+    section:not(#main) .section_inner{
+        padding: 30px 15px;
+    }
+
     .overZero .header_inner{
         height: 60px;
     }
@@ -296,6 +306,7 @@
         background: #fff;
         transform: translateY(0);
         border-top: 1px solid #000;
+        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.06);
 
     }
 
@@ -366,7 +377,7 @@
 
 }
 
-@media screen and (max-width: 680px){
+@media screen and (max-width: 700px){
 
     .main_slide .swiper-slide{
         padding-top: 430px;
@@ -522,8 +533,6 @@
     }
 
     .skill_icon{
-        width: 80px;
-        height: 80px;
     }
 
     .skill_icon_img img{
@@ -611,17 +620,15 @@
 
 @media screen and (max-width: 400px){
 
+    .skill_list ul{
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.05);
+    }
+
     .skill_list ul li{
         width: 100%;
     }
 
-    .skill_list ul li{
-        padding: 25px 0;
-    }
 
-    .skill_icon{
-        border: 1px solid #f2f4f9;
-    }
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {
