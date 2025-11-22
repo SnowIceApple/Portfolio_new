@@ -237,13 +237,6 @@
         top: 6px;
     }
 
-    .wl_desc{
-    }
-
-    .ccl_desc{
-        width: calc(100% - 40px);
-    }
-
     .skill_list ul{
         /* gap: 30px; */
     }
@@ -416,6 +409,10 @@
         width: 100%;
     }
 
+    .ccl_link ul li a span{
+        font-size: 15px;
+    }
+
     .ccl_img::after{
         display: none;
     }
@@ -539,29 +536,9 @@
         width: 36px;
     }
 
-    .ccsn_mouse{
-        width: 35px;
-        height: 65px;
-        border-width: 2px;
-    }
-
-    .ccsn_mouse::before{
-        width: 7px;
-        height: 7px;
-    }
-
-    @keyframes mouseMove{
-        0%{
-            opacity: 1;
-            transform: translate(-50%, 13px);
-            -webkit-transform: translate(-50%, 13px);
-        }
-    
-        100%{
-            opacity: 0;
-            transform: translate(-50%, 35px);
-            -webkit-transform: translate(-50%, 35px);
-        }
+    .ccl_img{
+        height: auto;
+        aspect-ratio: 16 / 10;
     }
 
     .cc_detail_cate ul li span{
@@ -627,6 +604,15 @@
     .skill_list ul li{
         width: 100%;
     }
+
+    .ccl_link ul{
+        gap: 10px;
+    }
+
+    .ccl_link ul li{
+        width: 100%;
+    }
+
 
 
 }
